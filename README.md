@@ -30,53 +30,53 @@
 
 
 ### 03_Program_organization
-- [ ] 00_Overview.md
-- [ ] 01_Script.md
-- [ ] 02_More_functions.md
-- [ ] 03_Error_checking.md
-- [ ] 04_Modules.md
-- [ ] 05_Main_module.md
-- [ ] 06_Design_discussion.md
+- [ ] 00_Overview.md - hilalozen1433@gmail.com
+- [ ] 01_Script.md - hilalozen1433@gmail.com
+- [ ] 02_More_functions.md - hilalozen1433@gmail.com
+- [ ] 03_Error_checking.md - elif.dikmen@std.yeditepe.edu.tr
+- [ ] 04_Modules.md - elif.dikmen@std.yeditepe.edu.tr
+- [ ] 05_Main_module.md - aysuno@sabanciuniv.edu
+- [ ] 06_Design_discussion.md - aysuno@sabanciuniv.edu
 
 ### 04_Classes_objects
-- [ ] 00_Overview.md
-- [ ] 01_Class.md
-- [ ] 02_Inheritance.md
-- [ ] 03_Special_methods.md
-- [ ] 04_Defining_exceptions.md
+- [ ] 00_Overview.md - duyguceren93@gmail.com
+- [ ] 01_Class.md - duyguceren93@gmail.com
+- [ ] 02_Inheritance.md - duyguceren93@gmail.com
+- [ ] 03_Special_methods.md - irendulger9@gmail.com
+- [ ] 04_Defining_exceptions.md - irendulger9@gmail.com
 
 ### 05_Object_model
-- [ ] 00_Overview.md
-- [ ] 01_Dicts_revisited.md
-- [ ] 02_Classes_encapsulation.md
+- [ ] 00_Overview.md - melisaayasak@gmail.com
+- [ ] 01_Dicts_revisited.md - melisaayasak@gmail.com
+- [ ] 02_Classes_encapsulation.md - melisaayasak@gmail.com
 
 ### 06_Generator
 - [ ] 00_Overview.md
-- [ ] 01_Iteration_protocol.md
-- [ ] 02_Customizing_iteration.md
-- [ ] 03_Producers_consumers.md
-- [ ] 04_More_generators.md
+- [ ] 01_Iteration_protocol.md - edakalender@yahoo.com
+- [ ] 02_Customizing_iteration.md - edakalender@yahoo.com
+- [ ] 03_Producers_consumers.md - medinenurugur669@gmail.com
+- [ ] 04_More_generators.md - medinenurugur669@gmail.com
 
 ### 07_Advanced_Topics
-- [ ] 00_Overview.md
-- [ ] 01_Variable_arguments.md
-- [ ] 02_Anonymous_function.md
-- [ ] 03_Returning_functions.md
-- [ ] 04_Function_decorators.md
-- [ ] 05_Decorated_methods.md
+- [ ] 00_Overview.md - ugurcanuzunkaya1@gmail.com
+- [ ] 01_Variable_arguments.md - ugurcanuzunkaya1@gmail.com
+- [ ] 02_Anonymous_function.md - ugurcanuzunkaya1@gmail.com
+- [ ] 03_Returning_functions.md - kblyctkk@gmail.com
+- [ ] 04_Function_decorators.md - kblyctkk@gmail.com
+- [ ] 05_Decorated_methods.md - kblyctkk@gmail.com
 
 ### 08_Testing_debugging
-- [ ] 00_Overview.md
-- [ ] 01_Testing.md
-- [ ] 02_Logging.md
-- [ ] 03_Debugging.md
+- [ ] 00_Overview.md - halillatass@gmail.com
+- [ ] 01_Testing.md - halillatass@gmail.com
+- [ ] 02_Logging.md - murattoprak2004@gmail.com
+- [ ] 03_Debugging.md murattoprak2004@gmail.com
 
 ### 09_Packages
-- [ ] 00_Overview.md
-- [ ] 01_Packages.md
-- [ ] 02_Third_party.md
-- [ ] 03_Distribution.md
-- [ ] TheEnd.md
+- [ ] 00_Overview.md - merveyubogluu@gmail.com
+- [ ] 01_Packages.md - merveyubogluu@gmail.com
+- [ ] 02_Third_party.md - merveyubogluu@gmail.com
+- [ ] 03_Distribution.md - berkanttugberk@gmail.com
+- [ ] TheEnd.md - berkanttugberk@gmail.com
 
 ## Work 
 - [ ] README.md
