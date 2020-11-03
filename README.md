@@ -4,6 +4,10 @@
 
 ## Notes
 
+- [ ] 00_Setup.md
+- [ ] Contents.md
+- [ ] InstructorNotes.md
+
 ### 01_Introduction
 - [ ] 00_Overview.md
 - [ ] 01_Python.md
@@ -46,7 +50,6 @@
 - [ ] 02_Classes_encapsulation.md
 
 ### 06_Generator
-
 - [ ] 00_Overview.md
 - [ ] 01_Iteration_protocol.md
 - [ ] 02_Customizing_iteration.md
@@ -54,7 +57,6 @@
 - [ ] 04_More_generators.md
 
 ### 07_Advanced_Topics
-
 - [ ] 00_Overview.md
 - [ ] 01_Variable_arguments.md
 - [ ] 02_Anonymous_function.md
@@ -63,7 +65,6 @@
 - [ ] 05_Decorated_methods.md
 
 ### 08_Testing_debugging
-
 - [ ] 00_Overview.md
 - [ ] 01_Testing.md
 - [ ] 02_Logging.md
@@ -75,10 +76,6 @@
 - [ ] 02_Third_party.md
 - [ ] 03_Distribution.md
 - [ ] TheEnd.md
-
-- [ ] 00_Setup.md
-- [ ] Contents.md
-- [ ] InstructorNotes.md
 
 ## Work 
 - [ ] README.md
