@@ -1,4 +1,4 @@
-# Python Çeviri Ekibi Checklist
+# Python Translate Ekibi Checklist
 
 - [ ] readme.md
 
