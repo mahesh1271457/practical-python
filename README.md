@@ -9,24 +9,25 @@
 - [ ] InstructorNotes.md
 
 ### 01_Introduction
-- [ ] 00_Overview.md
-- [ ] 01_Python.md
-- [ ] 02_Hello_world.md
-- [ ] 03_Numbers.md
-- [ ] 04_Strings.md
-- [ ] 05_Lists.md
-- [ ] 06_Files.md
-- [ ] 07_Functions.md
+- [ ] 00_Overview.md - 	ftfethi@gmail.com
+- [ ] 01_Python.md - 	ftfethi@gmail.com
+- [ ] 02_Hello_world.md - 	ftfethi@gmail.com
+- [ ] 03_Numbers.md - coinlanguage@gmail.com
+- [ ] 04_Strings.md - coinlanguage@gmail.com
+- [ ] 05_Lists.md - coinlanguage@gmail.com
+- [ ] 06_Files.md - bozkurtmert374@gmail.com
+- [ ] 07_Functions.md - bozkurtmert374@gmail.com
 
 ### 02_Working_with_data
-- [ ] 00_Overview.md
-- [ ] 01_Datatypes.md
-- [ ] 02_Containers.md
-- [ ] 03_Formatting.md
-- [ ] 04_Sequences.md
-- [ ] 05_Collections.md
-- [ ] 06_List_comprehension.md
-- [ ] 07_Objects.md
+- [ ] 00_Overview.md - socialprojects99@gmail.com
+- [ ] 01_Datatypes.md - socialprojects99@gmail.com
+- [ ] 02_Containers.md - socialprojects99@gmail.com
+- [ ] 03_Formatting.md - sevimmustafa@gmail.com
+- [ ] 04_Sequences.md - sevimmustafa@gmail.com
+- [ ] 05_Collections.md - sevimmustafa@gmail.com
+- [ ] 06_List_comprehension.md - bugra.baltaci@ozu.edu.tr
+- [ ] 07_Objects.md - bugra.baltaci@ozu.edu.tr
+
 
 ### 03_Program_organization
 - [ ] 00_Overview.md
