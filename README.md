@@ -35,8 +35,8 @@
 - [ ] 02_More_functions.md - hilalozen1433@gmail.com
 - [ ] 03_Error_checking.md - elif.dikmen@std.yeditepe.edu.tr
 - [ ] 04_Modules.md - elif.dikmen@std.yeditepe.edu.tr
-- [ ] 05_Main_module.md - aysuno@sabanciuniv.edu
-- [ ] 06_Design_discussion.md - aysuno@sabanciuniv.edu
+- [x] 05_Main_module.md - aysuno@sabanciuniv.edu
+- [x] 06_Design_discussion.md - aysuno@sabanciuniv.edu
 
 ### 04_Classes_objects
 - [ ] 00_Overview.md - duyguceren93@gmail.com
@@ -61,9 +61,9 @@
 - [ ] 00_Overview.md - ugurcanuzunkaya1@gmail.com
 - [ ] 01_Variable_arguments.md - ugurcanuzunkaya1@gmail.com
 - [ ] 02_Anonymous_function.md - ugurcanuzunkaya1@gmail.com
-- [ ] 03_Returning_functions.md - kblyctkk@gmail.com
-- [ ] 04_Function_decorators.md - kblyctkk@gmail.com
-- [ ] 05_Decorated_methods.md - kblyctkk@gmail.com
+- [x] 03_Returning_functions.md - kblyctkk@gmail.com
+- [x] 04_Function_decorators.md - kblyctkk@gmail.com
+- [x] 05_Decorated_methods.md - kblyctkk@gmail.com
 
 ### 08_Testing_debugging
 - [ ] 00_Overview.md - halillatass@gmail.com
@@ -75,8 +75,8 @@
 - [ ] 00_Overview.md - merveyubogluu@gmail.com
 - [ ] 01_Packages.md - merveyubogluu@gmail.com
 - [ ] 02_Third_party.md - merveyubogluu@gmail.com
-- [ ] 03_Distribution.md - berkanttugberk@gmail.com
-- [ ] TheEnd.md - berkanttugberk@gmail.com
+- [x] 03_Distribution.md - berkanttugberk@gmail.com
+- [x] TheEnd.md - berkanttugberk@gmail.com
 
 ## Work 
 - [ ] README.md
