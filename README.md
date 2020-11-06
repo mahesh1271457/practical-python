@@ -9,14 +9,14 @@
 - [ ] InstructorNotes.md
 
 ### 01_Introduction
-- [ ] 00_Overview.md - 	ftfethi@gmail.com
-- [ ] 01_Python.md - 	ftfethi@gmail.com
-- [ ] 02_Hello_world.md - 	ftfethi@gmail.com
+- [x] 00_Overview.md - 	ftfethi@gmail.com
+- [x] 01_Python.md - 	ftfethi@gmail.com
+- [x] 02_Hello_world.md - 	ftfethi@gmail.com
 - [ ] 03_Numbers.md - coinlanguage@gmail.com
 - [ ] 04_Strings.md - coinlanguage@gmail.com
 - [ ] 05_Lists.md - coinlanguage@gmail.com
-- [ ] 06_Files.md - bozkurtmert374@gmail.com
-- [ ] 07_Functions.md - bozkurtmert374@gmail.com
+- [x] 06_Files.md - bozkurtmert374@gmail.com
+- [x] 07_Functions.md - bozkurtmert374@gmail.com
 
 ### 02_Working_with_data
 - [ ] 00_Overview.md - socialprojects99@gmail.com
@@ -68,13 +68,13 @@
 ### 08_Testing_debugging
 - [ ] 00_Overview.md - halillatass@gmail.com
 - [ ] 01_Testing.md - halillatass@gmail.com
-- [ ] 02_Logging.md - murattoprak2004@gmail.com
-- [ ] 03_Debugging.md murattoprak2004@gmail.com
+- [x] 02_Logging.md - murattoprak2004@gmail.com
+- [x] 03_Debugging.md murattoprak2004@gmail.com
 
 ### 09_Packages
-- [ ] 00_Overview.md - merveyubogluu@gmail.com
-- [ ] 01_Packages.md - merveyubogluu@gmail.com
-- [ ] 02_Third_party.md - merveyubogluu@gmail.com
+- [x] 00_Overview.md - merveyubogluu@gmail.com
+- [x] 01_Packages.md - merveyubogluu@gmail.com
+- [x] 02_Third_party.md - merveyubogluu@gmail.com
 - [x] 03_Distribution.md - berkanttugberk@gmail.com
 - [x] TheEnd.md - berkanttugberk@gmail.com
 
