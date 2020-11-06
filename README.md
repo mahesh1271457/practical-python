@@ -25,8 +25,8 @@
 - [ ] 03_Formatting.md - sevimmustafa@gmail.com
 - [ ] 04_Sequences.md - sevimmustafa@gmail.com
 - [ ] 05_Collections.md - sevimmustafa@gmail.com
-- [ ] 06_List_comprehension.md - bugra.baltaci@ozu.edu.tr
-- [ ] 07_Objects.md - bugra.baltaci@ozu.edu.tr
+- [x] 06_List_comprehension.md - bugra.baltaci@ozu.edu.tr
+- [x] 07_Objects.md - bugra.baltaci@ozu.edu.tr
 
 
 ### 03_Program_organization
