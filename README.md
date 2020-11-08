@@ -12,9 +12,9 @@
 - [x] 00_Overview.md - 	ftfethi@gmail.com
 - [x] 01_Python.md - 	ftfethi@gmail.com
 - [x] 02_Hello_world.md - 	ftfethi@gmail.com
-- [ ] 03_Numbers.md - coinlanguage@gmail.com
-- [ ] 04_Strings.md - coinlanguage@gmail.com
-- [ ] 05_Lists.md - coinlanguage@gmail.com
+- [x] 03_Numbers.md - bozkurtmert374@gmail.com
+- [x] 04_Strings.md - bozkurtmert374@gmail.com
+- [x] 05_Lists.md - bozkurtmert374@gmail.com
 - [x] 06_Files.md - bozkurtmert374@gmail.com
 - [x] 07_Functions.md - bozkurtmert374@gmail.com
 
@@ -33,15 +33,15 @@
 - [ ] 00_Overview.md - hilalozen1433@gmail.com
 - [ ] 01_Script.md - hilalozen1433@gmail.com
 - [ ] 02_More_functions.md - hilalozen1433@gmail.com
-- [ ] 03_Error_checking.md - elif.dikmen@std.yeditepe.edu.tr
-- [ ] 04_Modules.md - elif.dikmen@std.yeditepe.edu.tr
+- [x] 03_Error_checking.md - elif.dikmen@std.yeditepe.edu.tr
+- [x] 04_Modules.md - elif.dikmen@std.yeditepe.edu.tr
 - [x] 05_Main_module.md - aysuno@sabanciuniv.edu
 - [x] 06_Design_discussion.md - aysuno@sabanciuniv.edu
 
 ### 04_Classes_objects
-- [ ] 00_Overview.md - duyguceren93@gmail.com
-- [ ] 01_Class.md - duyguceren93@gmail.com
-- [ ] 02_Inheritance.md - duyguceren93@gmail.com
+- [x] 00_Overview.md - duyguceren93@gmail.com
+- [x] 01_Class.md - duyguceren93@gmail.com
+- [x] 02_Inheritance.md - duyguceren93@gmail.com
 - [ ] 03_Special_methods.md - irendulger9@gmail.com
 - [ ] 04_Defining_exceptions.md - irendulger9@gmail.com
 
