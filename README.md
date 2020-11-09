@@ -42,13 +42,13 @@
 - [x] 00_Overview.md - duyguceren93@gmail.com
 - [x] 01_Class.md - duyguceren93@gmail.com
 - [x] 02_Inheritance.md - duyguceren93@gmail.com
-- [ ] 03_Special_methods.md - irendulger9@gmail.com
-- [ ] 04_Defining_exceptions.md - irendulger9@gmail.com
+- [x] 03_Special_methods.md - irendulger9@gmail.com
+- [x] 04_Defining_exceptions.md - irendulger9@gmail.com
 
 ### 05_Object_model
-- [ ] 00_Overview.md - melisaayasak@gmail.com
-- [ ] 01_Dicts_revisited.md - melisaayasak@gmail.com
-- [ ] 02_Classes_encapsulation.md - melisaayasak@gmail.com
+- [x] 00_Overview.md - melisaayasak@gmail.com
+- [x] 01_Dicts_revisited.md - melisaayasak@gmail.com
+- [x] 02_Classes_encapsulation.md - melisaayasak@gmail.com
 
 ### 06_Generator
 - [ ] 00_Overview.md
