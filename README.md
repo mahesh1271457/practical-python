@@ -1,11 +1,11 @@
 # Python Translate Ekibi Checklist
 
-- [ ] readme.md
+- [x] readme.md - Mert Cobanov - Cobanov
 
 ## Notes
 
-- [ ] 00_Setup.md
-- [ ] Contents.md
+- [x] 00_Setup.md - Mert Cobanov - Cobanov
+- [x] Contents.md - Mert Cobanov - Cobanov
 - [ ] InstructorNotes.md
 
 ### 01_Introduction
@@ -19,9 +19,9 @@
 - [x] 07_Functions.md - bozkurtmert374@gmail.com
 
 ### 02_Working_with_data
-- [ ] 00_Overview.md - socialprojects99@gmail.com
-- [ ] 01_Datatypes.md - socialprojects99@gmail.com
-- [ ] 02_Containers.md - socialprojects99@gmail.com
+- [x] 00_Overview.md - bozkurtmert374@gmail.com
+- [x] 01_Datatypes.md - bozkurtmert374@gmail.com
+- [x] 02_Containers.md - bozkurtmert374@gmail.com
 - [ ] 03_Formatting.md - sevimmustafa@gmail.com
 - [ ] 04_Sequences.md - sevimmustafa@gmail.com
 - [ ] 05_Collections.md - sevimmustafa@gmail.com
@@ -54,12 +54,11 @@
 - [ ] 00_Overview.md
 - [ ] 01_Iteration_protocol.md - edakalender@yahoo.com
 - [ ] 02_Customizing_iteration.md - edakalender@yahoo.com
-- [ ] 03_Producers_consumers.md - medinenurugur669@gmail.com
-- [ ] 04_More_generators.md - medinenurugur669@gmail.com
-
+- [ ] 03_Producers_consumers.md - Yagmur
+- [ ] 04_More_generators.md - Yagmur
 ### 07_Advanced_Topics
 - [ ] 00_Overview.md - ugurcanuzunkaya1@gmail.com
-- [ ] 01_Variable_arguments.md - ugurcanuzunkaya1@gmail.com
+- [x] 01_Variable_arguments.md - ugurcanuzunkaya1@gmail.com
 - [ ] 02_Anonymous_function.md - ugurcanuzunkaya1@gmail.com
 - [x] 03_Returning_functions.md - kblyctkk@gmail.com
 - [x] 04_Function_decorators.md - kblyctkk@gmail.com
