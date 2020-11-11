@@ -22,9 +22,9 @@
 - [x] 00_Overview.md - bozkurtmert374@gmail.com
 - [x] 01_Datatypes.md - bozkurtmert374@gmail.com
 - [x] 02_Containers.md - bozkurtmert374@gmail.com
-- [ ] 03_Formatting.md - sevimmustafa@gmail.com
-- [ ] 04_Sequences.md - sevimmustafa@gmail.com
-- [ ] 05_Collections.md - sevimmustafa@gmail.com
+- [x] 03_Formatting.md - bozkurtmert374@gmail.com
+- [x] 04_Sequences.md - bozkurtmert374@gmail.com
+- [x] 05_Collections.md - bozkurtmert374@gmail.com
 - [x] 06_List_comprehension.md - bugra.baltaci@ozu.edu.tr
 - [x] 07_Objects.md - bugra.baltaci@ozu.edu.tr
 
@@ -54,8 +54,8 @@
 - [ ] 00_Overview.md
 - [ ] 01_Iteration_protocol.md - edakalender@yahoo.com
 - [ ] 02_Customizing_iteration.md - edakalender@yahoo.com
-- [ ] 03_Producers_consumers.md - Yagmur
-- [ ] 04_More_generators.md - Yagmur
+- [ ] 03_Producers_consumers.md - yagmurgulbaz01@gmail.com
+- [ ] 04_More_generators.md - yagmurgulbaz01@gmail.com
 ### 07_Advanced_Topics
 - [ ] 00_Overview.md - ugurcanuzunkaya1@gmail.com
 - [x] 01_Variable_arguments.md - ugurcanuzunkaya1@gmail.com
