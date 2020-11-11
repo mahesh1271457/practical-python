@@ -6,7 +6,7 @@
 
 - [x] 00_Setup.md - Mert Cobanov - Cobanov
 - [x] Contents.md - Mert Cobanov - Cobanov
-- [ ] InstructorNotes.md
+- [x] InstructorNotes.md
 
 ### 01_Introduction
 - [x] 00_Overview.md - 	ftfethi@gmail.com
@@ -30,9 +30,9 @@
 
 
 ### 03_Program_organization
-- [ ] 00_Overview.md - hilalozen1433@gmail.com
-- [ ] 01_Script.md - hilalozen1433@gmail.com
-- [ ] 02_More_functions.md - hilalozen1433@gmail.com
+- [x] 00_Overview.md - hilalozen1433@gmail.com
+- [x] 01_Script.md - hilalozen1433@gmail.com
+- [x] 02_More_functions.md - hilalozen1433@gmail.com
 - [x] 03_Error_checking.md - elif.dikmen@std.yeditepe.edu.tr
 - [x] 04_Modules.md - elif.dikmen@std.yeditepe.edu.tr
 - [x] 05_Main_module.md - aysuno@sabanciuniv.edu
