@@ -1,4 +1,4 @@
-[İçindekiler](../Contents.md) \| [Önceki (7.3 Fonksiyonlarda Return)](03_Returning_functions.md) \| [Sonraki (7.5 Dekore Edilmiş Metotlar)](05_Decorated_methods.md)
+[Contents](../Contents.md) \| [Previous (7.3 Returning Functions)](03_Returning_functions.md) \| [Next (7.5 Decorated Methods)](05_Decorated_methods.md)
 
 # 7.4 Fonksiyon Dekoratörleri
 
@@ -139,5 +139,5 @@ __main__.countdown : 0.076562
 
 `@timethis` dekoratörü herhangi bir fonksiyon tanımlamasının önünde kullanılabilir. Bunun yanı sıra, performans iyileştirmesi yaparken tanı aracı olarak da kullanılabilir.
 
-[İçindekiler](../Contents.md) \| [Önceki (7.3 Fonksiyonlarda Return)](03_Returning_functions.md) \| [Sonraki (7.5 Dekore Edilmiş Metotlar)](05_Decorated_methods.md)
+[Contents](../Contents.md) \| [Previous (7.3 Returning Functions)](03_Returning_functions.md) \| [Next (7.5 Decorated Methods)](05_Decorated_methods.md)
 

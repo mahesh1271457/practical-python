@@ -1,4 +1,4 @@
-[İçindekiler](../Contents.md) \| [Önceki (4.1 Sınıflar)](01_Class.md) \| [Sonraki (4.3 Özel Metotlar)](03_Special_methods.md)
+[Contents](../Contents.md) \| [Previous (4.1 Classes)](01_Class.md) \| [Next (4.3 Special methods)](03_Special_methods.md)
 
 # 4.2 Kalıtım
 
@@ -616,4 +616,4 @@ Daha fazla bilgi için, muhtemelen tasarım kalıpları konusuyla ilgili kitapla
 bakmalısınız(bu alıştırmada ne olduğunu anlamak, nesneleri pratik olarak yararlı
 bir şekilde kullanma konusunda sizi oldukça ileriye götürür).
 
-[İçindekiler](../Contents.md) \| [Previous (4.1 Sınıflar)](01_Class.md) \| [Next (4.3 Özel metotlar)](03_Special_methods.md)
+[Contents](../Contents.md) \| [Previous (4.1 Classes)](01_Class.md) \| [Next (4.3 Special methods)](03_Special_methods.md)

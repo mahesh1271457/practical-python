@@ -1,4 +1,4 @@
-[İçindekiler](../Contents.md) \| [Next (2 Veriyle Çalışmak)](../02_Working_with_data/00_Overview.md)
+[Contents](../Contents.md) \| [Next (2 Working With Data)](../02_Working_with_data/00_Overview.md)
 
 ## 1. Python’a Giriş
 
@@ -13,5 +13,5 @@ Sıfırdan başlayarak, küçük programları nasıl düzenleyebileceğinizi, ç
 * [1.6 Dosyalar](06_Files.md)
 * [1.7 Fonksiyonlar](07_Functions.md)
 
-[İçindekiler](../Contents.md) \| [Next (2 Veriyle Çalışmak)](../02_Working_with_data/00_Overview.md)
+[Contents](../Contents.md) \| [Next (2 Working With Data)](../02_Working_with_data/00_Overview.md)
 

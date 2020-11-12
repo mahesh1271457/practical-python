@@ -1,3 +1,5 @@
+[Contents](../Contents.md) \| [Previous (3.3 Error Checking)](03_Error_checking.md) \| [Next (3.5 Main Module)](05_Main_module.md)
+
 # 3.4 Modüller
  Bu bölüm,modül kavramını ve birden çok dosyaya yayılan
  işlevler ile çalışmayı tanıtır.
@@ -313,3 +315,4 @@ oluşturan 'report.py',ancak ayrıca 'read_portfolio()' ve 'read_prices()' işle
 de içerir.Ve son olarak, portföy maliyetini hesaplayan ancak 'report.py' programı için
 yazılmış 'read_portfolio()' işlevini kullanan 'pcost.py'.
 
+[Contents](../Contents.md) \| [Previous (3.3 Error Checking)](03_Error_checking.md) \| [Next (3.5 Main Module)](05_Main_module.md)

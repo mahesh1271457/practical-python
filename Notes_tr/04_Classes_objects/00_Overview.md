@@ -1,4 +1,4 @@
-[İçindekiler](../Contents.md) \| [Önceki (3 Program Organizasyonu)](../03_Program_organization/00_Overview.md) \| [Sonraki (5 Python Nesnelerinin İç Çalışmaları)](../05_Object_model/00_Overview.md)
+[Contents](../Contents.md) \| [Prev (3 Program Organization)](../03_Program_organization/00_Overview.md) \| [Next (5 Inner Workings of Python Objects)](../05_Object_model/00_Overview.md)
 
 # 4. Sınıflar ve Nesneler
 
@@ -15,4 +15,4 @@ dahil olmak üzere sınıfların diğer birkaç özelliğine bakacağız.
 * [4.3 Özel Metotlar](03_Special_methods.md)
 * [4.4 Yeni İstisna Tanımlama](04_Defining_exceptions.md)
 
-[İçindekiler](../Contents.md) \| [Önceki (3 Program Organizasyonu)](../03_Program_organization/00_Overview.md) \| [Sonraki (5 Python Nesnelerinin İç Çalışmaları)](../05_Object_model/00_Overview.md)
+[Contents](../Contents.md) \| [Prev (3 Program Organization)](../03_Program_organization/00_Overview.md) \| [Next (5 Inner Workings of Python Objects)](../05_Object_model/00_Overview.md)

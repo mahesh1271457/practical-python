@@ -51,22 +51,22 @@
 - [x] 02_Classes_encapsulation.md - melisaayasak@gmail.com
 
 ### 06_Generator
-- [ ] 00_Overview.md
-- [ ] 01_Iteration_protocol.md - edakalender@yahoo.com
-- [ ] 02_Customizing_iteration.md - edakalender@yahoo.com
-- [ ] 03_Producers_consumers.md - yagmurgulbaz01@gmail.com
-- [ ] 04_More_generators.md - yagmurgulbaz01@gmail.com
+- [x] 00_Overview.md açıkta
+- [x] 01_Iteration_protocol.md - açıkta
+- [x] 02_Customizing_iteration.md - açıkta
+- [x] 03_Producers_consumers.md - yagmurgulbaz01@gmail.com
+- [x] 04_More_generators.md - yagmurgulbaz01@gmail.com
 ### 07_Advanced_Topics
-- [ ] 00_Overview.md - ugurcanuzunkaya1@gmail.com
+- [x] 00_Overview.md - ugurcanuzunkaya1@gmail.com
 - [x] 01_Variable_arguments.md - ugurcanuzunkaya1@gmail.com
-- [ ] 02_Anonymous_function.md - ugurcanuzunkaya1@gmail.com
+- [x] 02_Anonymous_function.md - ugurcanuzunkaya1@gmail.com
 - [x] 03_Returning_functions.md - kblyctkk@gmail.com
 - [x] 04_Function_decorators.md - kblyctkk@gmail.com
 - [x] 05_Decorated_methods.md - kblyctkk@gmail.com
 
 ### 08_Testing_debugging
-- [ ] 00_Overview.md - halillatass@gmail.com
-- [ ] 01_Testing.md - halillatass@gmail.com
+- [ ] 00_Overview.md - sezen duygu ceren
+- [ ] 01_Testing.md - sezen duygu ceren
 - [x] 02_Logging.md - murattoprak2004@gmail.com
 - [x] 03_Debugging.md murattoprak2004@gmail.com
 

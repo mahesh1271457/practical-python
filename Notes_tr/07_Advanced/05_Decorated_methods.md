@@ -1,4 +1,5 @@
-[İçindekiler](../Contents.md) \| [Önceki (7.4 Dekoratörler)](04_Function_decorators.md) \| [Sonraki (8 Test Etme ve Debug Yapma)](../08_Testing_debugging/00_Overview.md)
+[Contents](../Contents.md) \| [Previous (7.4 Decorators)](04_Function_decorators.md) \| [Next (8 Testing and Debugging)](../08_Testing_debugging/00_Overview.md)
+
 
 # 7.5 Dekore Edilmiş Metotlar
 
@@ -193,5 +194,6 @@ Bu yeni Portfolio class’ını kullanabilmek için şöyle bir kod yazabilirsin
 
 Bu değişiklikleri `Portfolio` class’ı üzerinde uygulayın ve `report.py` kodlarını bu class metodunu kullanacak şekilde düzenleyin.
 
-[İçindekiler](../Contents.md) \| [Önceki (7.4 Dekoratörler)](04_Function_decorators.md) \| [Sonraki (8 Test Etme ve Debug Yapma)](../08_Testing_debugging/00_Overview.md)
+[Contents](../Contents.md) \| [Previous (7.4 Decorators)](04_Function_decorators.md) \| [Next (8 Testing and Debugging)](../08_Testing_debugging/00_Overview.md)
+
 

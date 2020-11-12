@@ -1,3 +1,5 @@
+[Contents](../Contents.md) \| [Previous (3.2 More on Functions)](02_More_functions.md) \| [Next (3.4 Modules)](04_Modules.md)
+
 # 3.3 Hata Denetimi
  Özel durumlar daha önce sunulmuş olsa da, bu bölüm 
 hata denetimi ve istisnai durumlar ile ilgili bazı
@@ -397,3 +399,5 @@ işlevini değiştirin.Örneğin:
 
  Hata işleme, çoğu programda doğru yapılması en zor şeylerden biridir.Genel bir kural olarak,hataları sessizce görmezden gelmemelisiniz.
 Bunun yerine, sorunları bildirmek ve kullanıcıya hata iletisini susturma seçeneği vermek daha iyidir.
+
+[Contents](../Contents.md) \| [Previous (3.2 More on Functions)](02_More_functions.md) \| [Next (3.4 Modules)](04_Modules.md)

@@ -1,4 +1,4 @@
-[İçindekiler](../Contents.md) \| [Previous (1.1 Python)](01_Python.md) \| [Next (1.3 Sayılar)](03_Numbers.md)
+[Contents](../Contents.md) \| [Previous (1.1 Python)](01_Python.md) \| [Next (1.3 Numbers)](03_Numbers.md)
 
 # 1.2 İlk Program
 
@@ -443,6 +443,6 @@ Hataları okumak Python kodunun önemli bir parçasıdır. Eğer programınız �
 * Programı başarıyla çalıştır
 
 
-[İçindekiler](../Contents.md) \| [Previous (1.1 Python)](01_Python.md) \| [Next (1.3 Sayılar)](03_Numbers.md)
+[Contents](../Contents.md) \| [Previous (1.1 Python)](01_Python.md) \| [Next (1.3 Numbers)](03_Numbers.md)
 
 

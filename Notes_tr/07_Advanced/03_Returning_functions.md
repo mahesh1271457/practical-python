@@ -1,4 +1,4 @@
-[İçindekiler](../Contents.md) \| [Önceki (7.2 Anonim Fonksiyonlar)](02_Anonymous_function.md) \| [Sonraki (7.4 Dekoratörler)](04_Function_decorators.md)
+[Contents](../Contents.md) \| [Previous (7.2 Anonymous Functions)](02_Anonymous_function.md) \| [Next (7.4 Decorators)](04_Function_decorators.md)
 
 # 7.3 Fonksiyonlarda Return
 
@@ -224,5 +224,5 @@ Bu biraz daha iyi oldu. Buradan çıkarılacak ana sonuç; kapatmalar ve `lambda
 
 `stock.py` dosyasındaki `Stock` class’ını, önceden bahsedilmiş özellikleri gösterilen şekilde kullanacak biçimde yeniden yazın.
 
-[İçindekiler](../Contents.md) \| [Önceki (7.2 Anonim Fonksiyonlar)](02_Anonymous_function.md) \| [Sonraki (7.4 Dekoratörler)](04_Function_decorators.md)
+[Contents](../Contents.md) \| [Previous (7.2 Anonymous Functions)](02_Anonymous_function.md) \| [Next (7.4 Decorators)](04_Function_decorators.md)
 

@@ -1,3 +1,5 @@
+[Contents](../Contents.md) \| [Previous (4.2 Inheritance)](02_Inheritance.md) \| [Next (4.4 Exceptions)](04_Defining_exceptions.md)
+
 # 4.3 Özel Yöntemler
 
 Python'ın davranışlarının çeşitli bölümleri özel veya sözde "sihirli" denilebilecek yöntemlerle özelleştirilebilir. 
@@ -269,4 +271,4 @@ biçimini denetlemek için `TableFormatter`kullanmalıdır. Bu şekilde çalış
        IBM        100      70.44
 >>>
 ```
-
+[Contents](../Contents.md) \| [Previous (4.2 Inheritance)](02_Inheritance.md) \| [Next (4.4 Exceptions)](04_Defining_exceptions.md)

@@ -1,5 +1,4 @@
-[İçindekiler](../Contents.md) \| [Geri (6.4 Oluşturma İfadeleri)](../06_Generators/04_More_generators.md) \| [İleri (7.2 Anonim Fonksiyonlar)](02_Anonymous_function.md)
-
+[Contents](../Contents.md) \| [Previous (6.4 Generator Expressions)](../06_Generators/04_More_generators.md) \| [Next (7.2 Anonymous Functions)](02_Anonymous_function.md)
 # 7.1 Değişken Argümanları
 
 Bu bölüm `*args` ve `**kwargs` olarak da ifade edilen, değişken sayıda argüman alan fonksiyonlar konusunu ele alacaktır.
@@ -223,4 +222,4 @@ Row 7: Reason invalid literal for int() with base 10: ''
 >>>
 ```
 
-[İçindekiler](../Contents.md) \| [Geri (6.4 Oluşturma İfadeleri )](../06_Generators/04_More_generators.md) \| [İleri (7.2 Anonim Fonksiyonlar)](02_Anonymous_function.md)
+[Contents](../Contents.md) \| [Previous (6.4 Generator Expressions)](../06_Generators/04_More_generators.md) \| [Next (7.2 Anonymous Functions)](02_Anonymous_function.md)

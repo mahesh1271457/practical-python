@@ -1,4 +1,4 @@
-[İçindekiler](../Contents.md) \| [Önceki (9.2 Üçüncü Part Paketler)](02_Third_party.md) \| [Sonraki (SON)](TheEnd.md)
+[Contents](../Contents.md) \| [Previous (9.2 Third Party Packages)](02_Third_party.md) \| [Next (The End)](TheEnd.md)
 
 # 9.3 Dağıtım
 
@@ -77,8 +77,7 @@ ve 'MANIFEST.in' dosyalarınızı öncelikli dizine ekleyin.`python setup.py sdi
 kaynak dağıtım dosyasını oluşturun. Son olarak, Python virtual environment'a bu paketi
 kurup kuramadığınızı test edin.
 
-[İçindekiler](../Contents.md) \| [Önceki (9.2 Üçüncü Part Paketler)](02_Third_party.md) \| [Sonraki (SON)](TheEnd.md)
-
+[Contents](../Contents.md) \| [Previous (9.2 Third Party Packages)](02_Third_party.md) \| [Next (The End)](TheEnd.md)
 
 
 

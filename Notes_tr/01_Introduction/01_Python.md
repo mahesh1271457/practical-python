@@ -1,4 +1,4 @@
-[İçindekiler](../Contents.md) \| [Next (1.2 İlk Program)](02_Hello_world.md)
+[Contents](../Contents.md) \| [Next (1.2 A First Program)](02_Hello_world.md)
 
 # 1.1 Python
 
@@ -142,7 +142,7 @@ Eğer çalışma ortamınız HTTP proxy server kullanımını zorunlu kılıyors
 
 Eğer bunu çalıştıramadıysanız endişelenmeyin.  Kursun geri kalanının XML ayrıştırmayla alakası yok.
 
-[İçindekiler](../Contents.md) \| [Next (1.2 İlk Program)](02_Hello_world.md)
+[Contents](../Contents.md) \| [Next (1.2 A First Program)](02_Hello_world.md)
 
 
 

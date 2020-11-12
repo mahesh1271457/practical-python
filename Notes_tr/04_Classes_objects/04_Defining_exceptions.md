@@ -1,4 +1,6 @@
-#4.4 İstisnaları Tanımlama
+[Contents](../Contents.md) \| [Previous (4.3 Special methods)](03_Special_methods.md) \| [Next (5 Object Model)](../05_Object_model/00_Overview.md)
+
+# 4.4 İstisnaları Tanımlama
 
 Kulllanıcı tanımlı istisnalar(exceptions) sınıflar tarafından tanımlanır.
 
@@ -44,3 +46,5 @@ Traceback (most recent call last):
 FormatError: Unknown table format xls
 >>>
 ```
+
+[Contents](../Contents.md) \| [Previous (4.3 Special methods)](03_Special_methods.md) \| [Next (5 Object Model)](../05_Object_model/00_Overview.md)
