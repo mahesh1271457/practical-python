@@ -1,90 +1,91 @@
-# Python Translate Ekibi Checklist
+# Hoşgeldin!
 
-## Translators
-Mert Cobanov, Mert Bozkurt, Aysun Ogut, Fethi Tekyaygil, 
-Bugra Baltaci, Elif Dikmen, Duygu Ceren, İren Dulger,
-Melisa Yasak, Yagmur Gulbaz, Tugberk Demirtas,
-Kubilay Citak, Sezen Duygu Ceren, Murat Toprak,
-Merve Eyuboglu, Berkant Tugberk
+Yaklaşık 25 yıl önce ilk Python öğrendiğimde, her türden dağınık işe bunu nasıl verimli bir şekilde uygulayabileceğim konusunda beni çok etkilemişti. Aynı neşeyle hızla geçen on yılda kendimi başkalarını eğitirken buldum. Bu öğretimin de sonucu bu kurstur aslında. Bu Python dersleri 2007'den beri yüzyüze gruplar halinde 400'den fazla kişiye aktif olarak öğretiliyor.
 
+Tüccarlar, sistem yöneticileri, gökbilimciler, tamirciler ve hatta Python'u kullanarak birkaç Mars'a araç indiren birkaç yüz roket bilimcisi hepsi bu kursu aldı. Şimdi ben Creative Commons lisansı altında bunu kullanıma sunmaktan memnuniyet duyuyorum. İyi eğlenceler!
 
-- [x] readme.md - Mert Cobanov - Cobanov
+[GitHub Pages](https://dabeaz-course.github.io/practical-python) | [GitHub Repo](https://github.com/dabeaz-course/practical-python).
 
-## Notes
+--David Beazley ([https://dabeaz.com](https://dabeaz.com)), [@dabeaz](https://twitter.com/dabeaz)
 
-- [x] 00_Setup.md - Mert Cobanov
-- [x] Contents.md - Mert Cobanov
-- [x] InstructorNotes.md - Aysun Ogut
+## Nedir bu?
 
-### 01_Introduction
-- [x] 00_Overview.md - 	Fethi Tekyaygil
-- [x] 01_Python.md - Fethi Tekyaygil
-- [x] 02_Hello_world.md - Fethi Tekyaygil
-- [x] 03_Numbers.md - Mert Bozkurt
-- [x] 04_Strings.md - Mert Bozkurt
-- [x] 05_Lists.md - Mert Bozkurt
-- [x] 06_Files.md - Mert Bozkurt
-- [x] 07_Functions.md - Mert Bozkurt
+Burada gördüğünüz materyal kurumsal eğitim ve profesyonel geliştirme için kullanılan, eğitmen önderliğinde bir Python eğitimin kursunun kalbidir. 2007'den beri gelişmeye devam eden ve gerçek-dünya sınıflarında test edilmektedir. Genellikle, üç veya dört gün boyunca yüz yüze yaklaşık olarak 25-35 saat yoğun çalışma ile eğitim verilmektedir. Bu eğitim yaklaşık 130 uygulamalı kodlama alıştırmasının tamamlanmasını içermektedir.
 
-### 02_Working_with_data
-- [x] 00_Overview.md - Mert Bozkurt
-- [x] 01_Datatypes.md - Mert Bozkurt
-- [x] 02_Containers.md - Mert Bozkurt
-- [x] 03_Formatting.md - Mert Bozkurt
-- [x] 04_Sequences.md - Mert Bozkurt
-- [x] 05_Collections.md - Mert Bozkurt
-- [x] 06_List_comprehension.md - Bugra Baltaci
-- [x] 07_Objects.md - Bugra Baltaci
+## Hedef Kitle
 
+Bu kurstaki öğrenciler genellikle profesyonel bilim insanları, mühendisler ve hali hazırda en azından bir programlama dilinde tecrübesi olan yazılımcılardır. Python için ön bilgiye ihtiyaç yoktur fakat genel programlama konularına hakimiyet beklenmektedir. Çoğu katılımcı biraz Python programlama konularında bilgisi olmalarına rağmen bu kursu zorlayıcı bulmaktadır.
 
-### 03_Program_organization
-- [x] 00_Overview.md - Aysun Ogut
-- [x] 01_Script.md - Aysun Ogut
-- [x] 02_More_functions.md - Aysun Ogut
-- [x] 03_Error_checking.md - Elif Dikmen
-- [x] 04_Modules.md - Elif Dikmen
-- [x] 05_Main_module.md - Aysun Ogut
-- [x] 06_Design_discussion.md - Aysun Ogut
+## Kurs Hedefleri
 
-### 04_Classes_objects
-- [x] 00_Overview.md - Duygu Ceren
-- [x] 01_Class.md - Duygu Ceren
-- [x] 02_Inheritance.md - Duygu Ceren
-- [x] 03_Special_methods.md - İren Dulger
-- [x] 04_Defining_exceptions.md - İren Dulger
+Bu dersin amacı script yazma, veri işleme ve program organizasyonu gibi Python'un temel yönlerini ele almaktır. Bu kursun sonunda öğrenciler kendi başlarına yararlı Python programları yazmaya veya iş arkadaşlarının kodlarını anlamaya ve değiştirmeye başlayabilir.
 
-### 05_Object_model
-- [x] 00_Overview.md - Melisa Yasak
-- [x] 01_Dicts_revisited.md - Melisa Yasak
-- [x] 02_Classes_encapsulation.md - Melisa Yasak
+## Gereklilikler
 
-### 06_Generator
-- [x] 00_Overview.md - Mert Bozkurt
-- [x] 01_Iteration_protocol.md - Mert Bozkurt
-- [x] 02_Customizing_iteration.md - Mert Bozkurt
-- [x] 03_Producers_consumers.md - Yagmur Gulbaz
-- [x] 04_More_generators.md - Yagmur Gulbaz
+Bu kursu tamamlamak için, basitçe Python 3.6 veya daha yeni bir versiyonun kurulumundan başka bir şeye ihtiyacın yok.
 
-### 07_Advanced_Topics
-- [x] 00_Overview.md - 	Tugberk Demirtas
-- [x] 01_Variable_arguments.md - Tugberk Demirtas
-- [x] 02_Anonymous_function.md - Tugberk Demirtas
-- [x] 03_Returning_functions.md - Kubilay Citak
-- [x] 04_Function_decorators.md - Kubilay Citak
-- [x] 05_Decorated_methods.md - Kubilay Citak
+## Bu kurs ne değildir?
 
-### 08_Testing_debugging
-- [x] 00_Overview.md - Sezen Duygu Ceren
-- [x] 01_Testing.md - Sezen Duygu Ceren
-- [x] 02_Logging.md - Murat Toprak
-- [x] 03_Debugging.md - Murat Toprak
+Bu kurs bilgisayar programlama kısmında tamamen başlangıç seviyesinde olanlar için değildir. Hali hazırda bir programlama dilinde tecrübeniz olduğu veya Python'un kendisinde bir bilginiz olduğu varsayılır. Bu, web geliştirme üzerine bir kurs değildir. O farklı
+bir sirk. Ancak, bu sirke takılırsanız, yine de bazı ilginç eylemler göreceksiniz. (hayvanları içeren hiçbir şey yok)
 
-### 09_Packages
-- [x] 00_Overview.md - Merve Eyuboglu
-- [x] 01_Packages.md - Merve Eyuboglu
-- [x] 02_Third_party.md - Merve Eyuboglu
-- [x] 03_Distribution.md - Berkant Tugberk
-- [x] TheEnd.md - Berkant Tugberk
+_yazar burada bir deyim kullanmış aynı şekilde bırakıyorum :)_
 
-## Work 
-- [ ] README.md
+Bu kurs nasıl milyonlarca satırlı Python uygulaması yazılır üzerinde duran yazılım mühendisleri için de değil. Ben bu tarz programlar yazmıyorum, çoğu Python kullanan şirket de yapmaz ve sen de böyle yapmamalısın. Şimdiden bir şeyi silin!
+
+> ÇN: Tam bir karşılık bulamadım.
+> I don't write programs like that, nor do most companies who use Python, and neither should you. Delete something already!
+
+## Beni kursa ışınla!
+
+Tamam, tamam. Fare'ni buraya getir [Buraya](Notes_tr/Contents_tr.md)!
+
+## Community Discussion
+
+Bu kurs hakkında tartışmak mı istiyorsun? [Gitter](https://gitter.im/dabeaz-course/practical-python)'da konuşmaya katılabilirsin. Kişisel olarak cevap vereceğime söz veremem ama muhtemelen birileri yardım etmek için atlayacaktır.
+
+## Teşekkür
+
+Llorenç Muntaner, bu ders içeriğinin Apple Keynote'unu burada gördüğünüz çevrimiçi yapıya dönüştürdü.
+
+Birçok eğitmen bu kursun son 12 yılda zaman zaman sunumunu yapmıştır. Eğitmenler (alfabetik sırayla): Ned
+Batchelder, Juan Pablo Claude, Mark Fenner, Michael Foord, Matt
+Harrison, Raymond Hettinger, Daniel Klein, Travis Oliphant, James
+Powell, Michael Selik, Hugo Shi, Ian Stokes-Rees, Yarko Tymciurak,
+Bryan Van de ven, Peter Wang, and Mark Wiebe.
+
+Ayrıca bu kursu alan binlerce öğrenciye, onların geribildirimleri ve tartışmalarıyla yaptığı katkılara teşekkür ederim.
+
+## Soru, Cevaplar
+
+### S: İzleyebileceğim kurs videoları var mı?
+
+Hayır. Bu kurs senin Python kodu yazman ile alakalı, başka birisini izlemen değil.
+
+### S: Bu kurs nasıl lisanslandı?
+
+Pratik Pyhon Programlama, Creative Commons Attribution ShareAlike 4.0 International License koruması altındadır.
+
+### S: Bu kurs materyalini kendi vereceğim Python kursu için kullanabilir miyim?
+
+Evet, uygun atıf verildiği sürece.
+
+### S: Türev çalışmalar yapabilir miyim?
+
+Evet, bu tür çalışmalar aynı lisans koşullarını taşıdığı ve atıf sağladığı sürece.
+
+### S: Başka bir dile tercüme edebilir miyim?
+
+Evet, harika olurdu. Tamamladığında bana linkini gönder.
+
+### S: Kurs içeriğinden canlı yayın veya video yapabilir miyim?
+
+Evet, kesinlikle! Muhtemelen bunu yaparken Python programlama ile alakalı çok şey öğrenceksin.
+
+### S: "X" konusu neden yok?
+
+Sadece 3-4 günde kavrayabileceğin kadar çok malzeme var. Eğer o konu yoksa ya daha önceden eklenmişti ve herkesin kafasının patlamasına neden oldu ya da onu öncelikli olarak eklemek için yeterli zaman yoktu. Ayrıca bu bir kurs Python kılavuzu değil :)
+
+### S: Pull Request kabul ediyor musunuz?
+
+Hata raporları takdir edilmektedir ve [issue tracker](https://github.com/dabeaz-course/practical-python/issues) yoluyla dosyalanabilir. Davet dışında pull requestler kabul edilmez.Lütfen önce bir sorun bildirin.
