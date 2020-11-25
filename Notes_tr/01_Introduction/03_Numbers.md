@@ -151,8 +151,8 @@ if not (b < a or b > c):
 Değerlerin tiplerini değiştirmek için kullanılır:
 
 ```python
-a = int(x)    # x'i integer a çevirir
-b = float(x)  # x'i float a çevirir
+a = int(x)    # x'i integer'a çevirir
+b = float(x)  # x'i float'a çevirir
 ```
 
 Deneyelim.
@@ -161,7 +161,7 @@ Deneyelim.
 >>> a = 3.14159
 >>> int(a)
 3
->>> b = '3.14159' # bu string'leri sayılara çevirirken de kullanılabilir
+>>> b = '3.14159' # Bu, dizileri sayılara çevirirken de kullanılabilir
 >>> float(b)
 3.14159
 >>>
