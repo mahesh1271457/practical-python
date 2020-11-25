@@ -136,7 +136,7 @@ Aşağıdakileri kullanarak daha karmaşık mantıksal ifadeler oluşturabilirsi
 
 `and`, `or`, `not`
 
-İşte bir miktar örnek:
+İşte birkaç örnek:
 
 ```python
 if b >= a and b <= c:
