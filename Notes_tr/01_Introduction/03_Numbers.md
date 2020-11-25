@@ -124,12 +124,12 @@ e = math.log(x)
 Aşağıdaki karşılaştırmalar / ilişkisel operatörler sayılarla çalışır:
 
 ```
-x < y      daha az
-x <= y     daha az veya eşit
-x > y      daha fazla
-x >= y     daha fazla veya eşit
-x == y     eşittir
-x != y     eşit değildir
+x < y      Küçüktür
+x <= y     Küçük veya eşittir
+x > y      Büyüktür
+x >= y     Büyük veya eşittir
+x == y     Eşittir
+x != y     Eşit değildir
 ```
 
 Aşağıdakileri kullanarak daha karmaşık mantıksal ifadeler oluşturabilirsiniz :
