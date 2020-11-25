@@ -48,13 +48,13 @@ e = 0b10001111  # Binary
 Yaygın işlemler:
 
 ```
-x + y      ekleme
-x - y      çıkarma
-x * y      çarpma
-x / y      bölme (float üretir)
-x // y     tam değer bölme (integer üretir)
-x % y      modül (kalanı verir)
-x ** y     üs
+x + y      Ekleme
+x - y      Çıkarma
+x * y      Çarpma
+x / y      Bölme (float üretir)
+x // y     Tam değer bölme (integer üretir)
+x % y      Modül (kalanı verir)
+x ** y     Üs
 x << n     Bit kadar sola kaydır
 x >> n     Bit kadar sağa kaydır
 x & y      Bit-wise AND (bitdüzeyinde AND)
