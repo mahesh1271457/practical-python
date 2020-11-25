@@ -143,7 +143,7 @@ if b >= a and b <= c:
     print('b ,c ile a arasında')
 
 if not (b < a or b > c):
-    print('b hala  a ve c arasında')
+    print('b hala a ve c arasında')
 ```
 
 ### Sayı Dönüşümleri
