@@ -28,7 +28,7 @@ Python’ın yaratıcısının sözleriyle:
 
 ### Python Makinemin Neresinde?
 
-Python çalıştırabileceğiniz birçok ortam olsa da, Python genellikle terminal veya komut satırından çalıştırılabilen bir program olarak kurulur. Terminalden bu şekilde ‘python’ yazabiliyor olmalısınız:
+Python çalıştırabileceğiniz birçok ortam olsa da, Python genellikle terminal veya komut satırından çalıştırılabilen bir program olarak kurulur. Terminalden bu şekilde `python` yazabiliyor olmalısınız:
 
 ```
 bash $ python
