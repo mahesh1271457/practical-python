@@ -91,7 +91,7 @@ False
 >>>
 ```
 
-** Bu Python'nın bir hatası değil ** , ama CPU daki 'kayan nokta' donanımıyla alakalı.
+**Bu Python'nın bir hatası değil** , ama CPU daki 'kayan nokta' donanımıyla alakalı.
 
 Yaygın İşlemler:
 
