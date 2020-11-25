@@ -175,7 +175,7 @@ dosyasına bakın.
 ### Alıştırma 1.7: Dave'in İpoteği
 
 Dave, 30 yıllık sabit faizle $500,000 parayı
-Guido’nun ipotek , Hisse yatırım ve Bitcoin şirketinden alır. 
+Guido’nun ipotek , Hisse yatırım ve Bitcoin ticaret şirketinden alır. 
 Faiz oranı 5% ve aylık ödemesi $2684.11.
 
 İşte Dave'in toplam ödeyeceği tutarı hesaplayan program:
@@ -199,9 +199,9 @@ Programı çalıştırdığınız zaman alacağınız cevap `966,279.6` olacakt�
 
 ### Alıştırma 1.8: Ektra Ödemeler
 
-Dave'in ipoteğin ilk 12 ayı için fazladan 1000 $ / ay ödediğini varsayalım?
+Dave'in ipoteğin ilk 12 ayı için fazladan 1000$/ay ödediğini varsayalım?
 
-Programı bu ekstra ödemeleri içerecek şekilde yeniden düzenleyelim ve ödenen toplam tutarı ,gerekli ay ile birlikte yazdırmasını sağlayalım
+Programı bu ekstra ödemeleri içerecek şekilde yeniden düzenleyelin ve ödenen toplam tutarı, gerekli ay ile birlikte yazdırmasını sağlayalım.
 
 Bu yeni programı çalıştırdığınızda cevap olarak `929,965.62` ve 342 months (ay) olarak alacaksınız.
 
@@ -222,9 +222,9 @@ Dave eğer 5. yıldan başlayarak 4 yıl boyunca ektra $1000/aylık öderse ipot
 
 ### Alıştırma 1.10: Tablo Yapalım
 
-Programı ; ayı, şimdiye kadar ödenen tutarı ve kalan ödemeyi gösterecek şekilde düzenleyelim.
+Programı; ayı, şimdiye kadar ödenen tutarı ve kalan ödemeyi gösterecek şekilde düzenleyelim.
 
-Çıktımız şuna benzer bişey olacaktır:
+Çıktımız şuna benzer bir şey olacaktır:
 
 ```bash
 1 2684.11 499399.22
@@ -256,7 +256,7 @@ Hazır siz burdayken, geçen ay meydana gelen fazla ödemeyi önlemek için prog
 >>>
 ```
 
-Bunu aklınıda tutarak ,aşağıdakini açıklayabilir misiniz?
+Bunu aklınızda tutarak , bunu açıklayabilir misiniz?
 
 ```python
 >>> bool("False")
