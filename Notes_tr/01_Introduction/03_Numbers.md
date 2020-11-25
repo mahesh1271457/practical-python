@@ -121,7 +121,7 @@ e = math.log(x)
 
 ### 	Karşılaştırmalar
 
-Aşağıdaki karşılaştırmalar/ilişkisel operatörler sayılarla çalışır:
+Aşağıdaki karşılaştırmalar / ilişkisel operatörler sayılarla çalışır:
 
 ```
 x < y      daha az
