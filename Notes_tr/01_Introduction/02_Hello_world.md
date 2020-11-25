@@ -211,7 +211,7 @@ NAME = 'Guido'
 Dil (Python dili) koşulları her zaman küçük harfle yazılır.
 
 ```python
-while x < 0:   # OK
+while x < 0:   # DOĞRU
 WHILE x < 0:   # HATA
 ```
 
