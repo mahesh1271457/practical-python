@@ -4,7 +4,7 @@
 
 Bir programcı olarak daha büyüğünü istiyorsanız, düzenli olmayı isteyebilirsiniz.  
 Bu bölümde modüller ve kütüphanelerden bahsedeceğiz.
-İstisnalar ve hata işlemeyi de içerecek.
+İstisnalar ve hata işlemeyi de tanıtacağız.
 
 ###  Özel Fonksiyonlar
 
@@ -32,7 +32,7 @@ Bir fonksiyon bir dizi işlemi gerçekleştiren ve bir sonuç döndüren bir diz
 
 ### Kütüphane Fonksiyonları
 
-Python ,büyük bir standart kütüphane ile gelir.
+Python, büyük bir standart kütüphane ile gelir.
 Kütüphane modüllerine erişmek için `import` kullanılır.
 Örneğin:
 
@@ -49,7 +49,7 @@ Kütüphaneleri ve modülleri daha sonra daha ayrıntılı olarak ele alacağız
 
 ### Hatalar ve İstisnalar
 
-Fonksiyonlar ,hataları istisna olarak bildirir. Bir istisna ,bir işlevin durdurulmasına
+Fonksiyonlar, hataları istisna olarak bildirir. Bir istisna, bir işlevin durdurulmasına
 neden olup tüm programınızın durmasına neden olabilir.
 
 Bunu kendi python REPL'nizde deneyin.
@@ -85,7 +85,7 @@ for line in f:
 `ValueError` yakalamaya çalıştığınız hatayla eşleşmelidir .
 
 Ne tür hataların meydana gelebileceğini ve gerçekleştirilmekte olan 
-işleme bağlı olarak tam olarak bilmek genellikle zordur.  Daha iyi veya , 
+işleme bağlı olarak tam olarak bilmek genellikle zordur. Daha iyi veya kötü, 
 istisna işleme genellikle program beklenmedik bir şekilde çöktükten sonra eklenir.
  (i.e., "oh hayır,hatayı yakalamayı unuttuk. Bunu halletmeliyiz!").
 
@@ -98,7 +98,7 @@ raise RuntimeError('What a kerfuffle')
 ```
 
 Bu programın bir istisna ile geri dönüşünün iptaline neden olur,
-tabi bir 'try-except'bloğu tarafından yakalanmadıkça.
+tabi bir `try-except` bloğu tarafından yakalanmadıkça.
 
 ```bash
 % python3 foo.py
@@ -126,14 +126,14 @@ Hello Paula
 >>>
 ```
 
-Bir fonksiyonun ilk ifadesi dizeyse dokümantasyon görevi görür
+Bir fonksiyonun ilk ifadesi dizeyse dokümantasyon görevi görür.
 Görüntülemek için `help(greeting)` gibi bir fonksiyon yazmayı deneyin.
 
 ### Alıştırma 1.30: Bir betiği(script) işleve dönüştürmek
 
 `pcost.py` için yazdığınız kodu alalım [Alıştırma 1.27](06_Files.md)
-ve içine `portfolio_cost(filename)` diye bir fonksiyon yazalım. Bu fonksiyon dosya adını girdi olarak alsın
-, içindeki portfölye verisini okusun ve toplam maliyeti float olarak dönsün.
+ve içine `portfolio_cost(filename)` diye bir fonksiyon yazalım. Bu fonksiyon dosya adını girdi olarak alsın, içindeki 
+portfölye verisini okusun ve toplam maliyeti float olarak döndürsün.
 
 Fonksiyonu kullanmak için, programı değiştirelim ve aşağıdaki gibi görünsün:
 
@@ -162,7 +162,7 @@ Bu size fonksiyonunuzu etkileşimli moddan çağırmanıza izin verecektir.
 >>>
 ```
 
-Kodunuzla etkileşimli olarak denemeler yapabilecek ve test ve hata ayıklamanızı sağlayacaktır
+Kodunuzla etkileşimli olarak denemeler yapabilecek ve test ve hata ayıklamanızı sağlayacaktır.
 
 ### Alıştırma 1.31: Hata Yönetimi
 
@@ -182,7 +182,7 @@ Bu noktada bir karar vermek durumundasınız. Programınızın çalışmasını 
 ya orjinal girdi dosyanızı bozuk satırlarından arındırırsınız ya da kodunuzu bozuk satırları 
 işlemek için değiştirirsiniz.
 
-`pcost.py` ı düzenleyip,programın istisnaları yakalamasını ve bir uyarı mesajı yazdırmasını
+`pcost.py`ı düzenleyip, programın istisnaları yakalamasını ve bir uyarı mesajı yazdırmasını,
 dosyanın diğer kısımlarında işlemlerine devam etmesini sağlayın.
 
 ### Alıştırma 1.32: Bir kütüphane fonksiyonunu kullanmak
@@ -221,7 +221,7 @@ işaretlerini ilk sütundaki adlardan ayırdığını göreceksiniz.
 
 ### Alıştırma 1.33: Komut satırından okuma
 
- `pcost.py` programında dosyanın adı doğrudan koda bağlanmıştır :
+ `pcost.py` programında dosyanın adı doğrudan koda bağlanmıştır:
 
 ```python
 # pcost.py
@@ -235,7 +235,7 @@ cost = portfolio_cost('Data/portfolio.csv')
 print('Total cost:', cost)
 ```
 
-Bu öğrenme aşamasında ve test için yeterlidir, fakat gerçek programlarda böyle birşeyi 
+Bu öğrenme aşaması ve test için yeterlidir, fakat gerçek programlarda böyle birşeyi 
 istemeyebilirsiniz.
 
 Bunun yerine dosyanın adını bir argüman olarak iletebilirsiniz. 
