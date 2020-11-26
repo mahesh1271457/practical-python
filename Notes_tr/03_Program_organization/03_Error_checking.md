@@ -36,11 +36,12 @@ TypeError: unsupported operand type(s) for +:
 ```
 
 Kodu doğrulamak için, deneme üzerinde güçlü bir
-vurgu vardır.(daha sonra ele alınacak)
+vurgu vardır. (daha sonra ele alınacak)
 
-### 'Exceptions'
+### İstisnalar (Exceptions)
  Hataları bildirmek için özel durumlar kullanılır.
-Kendiniz bir özel durum oluşturmak için, "raise"
+Kendiniz bir özel durum oluşturmak için, `raise`
+
 ifadesini kullanın. 
 
 ```python
@@ -48,7 +49,7 @@ if name not in authorized:
     raise RuntimeError(f'{name} not authorized')
 ```
 
-To catch an exception use `try-except`.
+İstisna yakalamak için `try-except`kullanın.
 
 ```python
 try:
@@ -58,7 +59,7 @@ except RuntimeError as e:
 ```
 
 ### Özel Durum Taşıma
- Özel durumlar,ilk eşleşen 'except' ile yayılır.
+ Özel durumlar,ilk eşleşen `except` ile yayılır.
 
 ```python
 def grok():
@@ -83,7 +84,7 @@ def foo():
 foo()
 ```
 
- 'Exception''ı işlemek için ifadeleri 'except' bloğuna koyun.İşlemek istediğiniz
+ `Exception`'ı işlemek için ifadeleri `except` bloğuna koyun. İşlemek istediğiniz
 hataya istediğiniz ifadeleri ekleyebilirsiniz.
 
 ```python
@@ -114,7 +115,7 @@ def bar():
 bar()
 ```
 
- İşlemden sonra,yürütme 'try except''ten sonra sonraki ilk
+ İşlemden sonra, yürütme `try except`'ten sonra sonraki ilk
 ifade ile devam eder.
 
 ```python
@@ -136,8 +137,8 @@ bar()
 ```
 
 ### Yerleşik Özel Durumlar
- Yaklaşık 2 düzine kadar yerleşik özel durumlar var.Genellikle
-bu özel durumların adı neyin yanlış olduğunu gösterir.(örneğin, 
+ Yaklaşık 2 düzine kadar yerleşik özel durumlar var. Genellikle
+bu özel durumların adı neyin yanlış olduğunu gösterir (örneğin, 
 kötü bir değer sağladığınız için bir 'ValueError' yükseltilir.)
 Aşağıdakiler kapsamlı bir liste değil. Daha fazlası için belgeleri kontrol
 edin.
@@ -184,7 +185,7 @@ except RuntimeError as e:   # `e` holds the exception raised
     ...
 ```
 
-'e' özel durum türünün bir örneğidir. Ancak, yazdırıldığında 
+`e` özel durum türünün bir örneğidir. Ancak, yazdırıldığında 
 genellikle bir dize gibi görünür.
 
 ```python
@@ -193,7 +194,7 @@ except RuntimeError as e:
 ```
 
 ### Birden Çok Hatayı Yakalama
- Birden çok 'except' blokları kullanarak farklı türde özel durumlar 
+ Birden çok `except` blokları kullanarak farklı türde özel durumlar 
 yakalayabilirsiniz.
 
 ```python
@@ -218,7 +219,7 @@ except (IOError,LookupError,RuntimeError) as e:
 ```
 
 ### Bütün Hataları Yakalama 
- Herhangi bir özel durumu yakalamak için 'Exception' ifadesini şu şekilde kullanın:
+ Herhangi bir özel durumu yakalamak için `Exception` ifadesini şu şekilde kullanın:
 
 ```python
 try:
@@ -241,7 +242,7 @@ except Exception:
     print('Computer says no')
 ```
 
- Bu, olası tüm hataları yakalar ve kod hiç beklemediğiniz bir nedenle başarısız olduğunda
+Bu, olası tüm hataları yakalar ve kod hiç beklemediğiniz bir nedenle başarısız olduğunda
 hata ayıklama imkansız hale getirebilir.
 (e.g. uninstalled Python module, etc.).
 
@@ -259,11 +260,11 @@ Kodun neden başarısız olduğu ile ilgili belirli bir neden bildirir. Olası t
 yakalayan kod yazarken hataları görüntülemek/raporlamak için bazı mekanizmalara sahip olmak 
 hemen hemen her zaman iyi bir fikirdir.
 
- Genel olarak,bir hatay nr kadar dar kapsamlı yakalanırsa o kadar makuldur.Sadece halledebileceğiniz
-hataları yakalayın.Dier hataların geçmesine izin verin.(Belki başka kodlar onları halledebilir.)
+ Genel olarak,bir hatay ne kadar dar kapsamlı yakalanırsa o kadar makuldur. Sadece halledebileceğiniz
+hataları yakalayın. Diğer hataların geçmesine izin verin (Belki başka kodlar onları halledebilir).
 
-### Bir Özel Durumu Yeniden Yükseltme
- Yakalanan hatayı yaymak için 'raise' ifadesini kullanın.
+### Bir Özel Durumu Yeniden Yükseltmek
+ Yakalanan hatayı yaymak için `raise` ifadesini kullanın.
 
 ```python
 try:
@@ -276,12 +277,11 @@ except Exception as e:
 Bu, işlem yapmanızı (örn. logging) ve hatayı arayana iletmenize olanak tanır.
 
 ### En İyi Özel Durum Uygulamaları
- Özel durumları yakalamayın.Hızlı ve yüksekte başarısız olun.Eğer önemliyse,
-başka birisi probleme bakacaktır.Eğer *bu* birisi sizseniz, sadece özel durumu
-yakalayın.Diğer bir şey, yalnızca kurtarabileceğiniz ve aklı başında devam 
-edebileceğiniz hataları yakalayın.
+Özel Durum yakalamayın. Hızlı ve yüksekte başarısız olun. Eğer önemliyse,
+başka birisi probleme bakacaktır. Eğer *bu* birisi sizseniz, sadece özel durumu
+yakalayın. Yani, yalnızca düzeltebileceğiniz ve mantıklı bir şekilde devam edebileceğiniz hataları yakalayın.
 
-### 'finally' İfadesi
+### `finally` İfadesi
  Bir özel durum oluşup oluşmadığına bakılmaksızın çalışması gereken kodu belirtir.
 
 ```python
@@ -294,11 +294,11 @@ finally:
     lock.release()  # this will ALWAYS be executed. With and without exception.
 ```
  
- Kaynakları (özellikle kilitler, dosyalar, vb.) güvenli bir şekilde yönetmek için 
+Kaynakları (özellikle kilitler, dosyalar, vb.) güvenli bir şekilde yönetmek için 
 yaygın olarak kullanılır.
 
-### 'with' İfadesi
- Modern kodda, 'try-finally' genellikle 'with' ifadesi ile yer değiştirilir.
+### `with` İfadesi
+ Modern kodda, `try-finally` genellikle `with` ifadesi ile yer değiştirilir.
 
 ```python
 lock = Lock()
@@ -308,7 +308,7 @@ with lock:
 # lock released
 ```
 
- Daha tanıdık örnekler:
+Daha tanıdık örnekler:
 
 ```python
 with open(filename) as f:
@@ -318,17 +318,17 @@ with open(filename) as f:
 ```
 
  `with`, bir kaynak için kullanım *bağlamını* tanımlar. Yürütme ne zaman
-bu bağlamı bırakır, o zaman kaynaklar da serbest bırakılır.'ile' yalnızca onu 
+bu bağlamı bırakır, o zaman kaynaklar da serbest bırakılır. `with` yalnızca onu 
 desteklemek için özel olarak programlanmış belirli nesnelerle çalışır.
 
-##Alıştırmalar
+## Alıştırmalar
 
-###Alıştırma 3.8:Özel Durumları Yükseltme
- Son bölümde yazdığınız 'parse_csv()' işlevi, kullanıcı tarafından belirtilen 
+### Alıştırma 3.8: Özel Durumları Yükseltme
+Son bölümde yazdığınız 'parse_csv()' işlevi, kullanıcı tarafından belirtilen 
 sütunların seçilmesine izin verir, ancak yalnızca giriş veri dosyasında sütun üstbilgileri varsa çalışır.
 
 
-Hem 'select' hem de 'has_headers=False' bağımsız değişkenleri geçirilirse, kodu bir özel duruma yükseltecek
+Hem `select` hem de `has_headers=False` bağımsız değişkenleri geçirilirse, kodu bir özel duruma yükseltecek
 şekilde değiştirin.
 
 ```python
@@ -340,22 +340,22 @@ Traceback (most recent call last):
 RuntimeError: select argument requires column headers
 >>>
 ```
- Bu tek denetimi ekledikte sonra,işlevde başka tür akıl sağlığı kontrolleri yapmanız gerekip gerekmediğini 
-sorabilirsiniz.Örneğin, dosya adının bir dize olduğunu, türlerin bir liste olduğunu veya bu türden bir şey 
+ Bu tek denetimi ekledikte sonra, işlevde başka tür akıl sağlığı kontrolleri yapmanız gerekip gerekmediğini 
+sorabilirsiniz. Örneğin, dosya adının bir dize olduğunu, türlerin bir liste olduğunu veya bu türden bir şey 
 olduğunu kontrol etmeli misiniz?
  
- Genel bir kural olarak,genellikle bu tür testleri atlamak ve kötü girişlerde programın başarısız olduğunu 
-iletmek en iyisidir.Traceback iletisi sorunun kaynağına işaret eder ve hata ayıklamaya yardımcı olabilir.
+ Genel bir kural olarak, genellikle bu tür testleri atlamak ve kötü girişlerde programın başarısız olduğunu 
+iletmek en iyisidir. Traceback iletisi sorunun kaynağına işaret eder ve hata ayıklamaya yardımcı olabilir.
 
- Yukarıdaki denetimi eklemenin temel nedeni,kodu mantıklı olmayan bir modda çalıştırmaktan kaçınmaktır.
-(örneğin,sütun başlıkları gerektiren ancak aynı anda hiçbir başlık olmadığını belirten bir özelliği kullanma)
+ Yukarıdaki denetimi eklemenin temel nedeni, kodu mantıklı olmayan bir modda çalıştırmaktan kaçınmaktır.
+(örneğin, sütun başlıkları gerektiren ancak aynı anda hiçbir başlık olmadığını belirten bir özelliği kullanma)
 
  Bu,arama kodunun bir bölümünde bir proglamlama hatası gösterir."Olmaması gereken" vakaları kontrol etmek
 genellikle iyi bir fikirdir.
 
   ### Alıştırma 3.9:Özel Durumları Yakalama
-  Yazdığınız 'parse_csv()' işlevi, bir dosyanın tüm içeriğini işlemek için kullanılır.Ancak, gerçek dünyada, 
-giriş dosyaları bozuk, eksik veya kirli veri olabilir.Bu denemeyi deneyin:
+  Yazdığınız `parse_csv()` işlevi, bir dosyanın tüm içeriğini işlemek için kullanılır. Ancak, gerçek dünyada, 
+giriş dosyaları bozuk, eksik veya kirli veri olabilir. Bu denemeyi deneyin:
 
 ```python
 >>> portfolio = parse_csv('Data/missing.csv', types=[str, int, float])
@@ -367,11 +367,11 @@ ValueError: invalid literal for int() with base 10: ''
 >>>
 ```
 
- Kayıt oluşturma sırasında oluşturulan tüm "ValueError" istisnalarını yakalamak ve dönüştürülemeyen satırlar 
-için bir uyarı mesajı yazdırmak için "parse_csv ()" işlevini değiştirin.
+ Kayıt oluşturma sırasında oluşturulan tüm `ValueError` istisnalarını yakalamak ve dönüştürülemeyen satırlar 
+için bir uyarı mesajı yazdırmak için `parse_csv ()` işlevini değiştirin.
 
- Mesaj satır numarası ve neden başarısız olduğu hakkında bilgi içermelidir.İşlevinizi test etmek için 
-yukarıdaki 'Data/missing.csv' dosyasını okumayı deneyin.Örneğin:
+ Mesaj satır numarası ve neden başarısız olduğu hakkında bilgi içermelidir. İşlevinizi test etmek için 
+yukarıdaki `Data/missing.csv` dosyasını okumayı deneyin. Örneğin:
 
 
 ```python
@@ -387,8 +387,8 @@ Row 7: Reason invalid literal for int() with base 10: ''
 ```
 
 ### Alıştırma 3.10:Hataları Susturma
- Kullanıcı tarafından açıkça istenirse ayrıştırma hata iletilerinin susturulabilmesi için 'parse_csv()' 
-işlevini değiştirin.Örneğin:
+ Kullanıcı tarafından açıkça istenirse ayrıştırma hata iletilerinin susturulabilmesi için `parse_csv()`
+işlevini değiştirin. Örneğin:
 
 ```python
 >>> portfolio = parse_csv('Data/missing.csv', types=[str,int,float], silence_errors=True)
@@ -397,7 +397,7 @@ işlevini değiştirin.Örneğin:
 >>>
 ```
 
- Hata işleme, çoğu programda doğru yapılması en zor şeylerden biridir.Genel bir kural olarak,hataları sessizce görmezden gelmemelisiniz.
+ Hata işleme, çoğu programda doğru yapılması en zor şeylerden biridir. Genel bir kural olarak, hataları sessizce görmezden gelmemelisiniz.
 Bunun yerine, sorunları bildirmek ve kullanıcıya hata iletisini susturma seçeneği vermek daha iyidir.
 
 [Contents](../Contents.md) \| [Previous (3.2 More on Functions)](02_More_functions.md) \| [Next (3.4 Modules)](04_Modules.md)
