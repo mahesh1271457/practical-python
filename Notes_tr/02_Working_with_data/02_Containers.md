@@ -95,7 +95,7 @@ prices['CAT'] = 87.22
 prices['IBM'] = 93.37
 ```
 
-Bir örnek ,dosyadan sözlük içeriğini doldurmak.
+Bir örnek, dosyadan sözlük içeriğini doldurmak.
 
 ```python
 prices = {} # Initial empty dict
@@ -107,8 +107,8 @@ with open('Data/prices.csv', 'rt') as f:
 ```
 
 Not: Eğer bunu `Data/prices.csv` dosyasında deniyorsan, tam çalıştığını düşünürken
-dosyanın sonunda bir satır boşluk olduğu için program hata verecektir .Bunun için 
-kodu bir miktar düzenlemen gerekecektir. (Alıştırma 2.6 ye göz atın).
+dosyanın sonunda bir satır boşluk olduğu için program hata verecektir. Bunun için 
+kodu bir miktar düzenlemen gerekecektir (Alıştırma 2.6 ye göz atın).
 
 ### Sözlük Sorguları
 
@@ -151,7 +151,7 @@ holidays = {
 }
 ```
 
-Sonra ulaşmayı deneyelim :
+Sonra ulaşmayı deneyelim:
 
 ```python
 >>> holidays[3, 14]
@@ -159,7 +159,7 @@ Sonra ulaşmayı deneyelim :
 >>>
 ```
 
-*Bir liste,sets(dizi/küme) veya başka bir sözlük ,sözlük anahtarı olarak kullanılamaz çünkü liste ve sözlükler değiştirilemezdir.*
+*Bir liste,sets(dizi/küme) veya başka bir sözlük, sözlük anahtarı olarak kullanılamaz çünkü liste ve sözlükler değiştirilemezdir.*
 
 ### Sets(dizi/küme)
 
@@ -205,7 +205,7 @@ s1 - s2                 # Set farkı
 ## Alıştırmalar
 
 Bu alıştırmalarda, kursun geri kalanında kullanılan ana programlardan birini oluşturmaya başlıyorsunuz.
-Çalışmaların `Work/report.py` dizisinde.
+Çalışmalarınızı `Work/report.py` dizisinde yapın.
 
 ### Alıştırma 2.4: Tuple Listesi
 
@@ -236,10 +236,10 @@ def portfolio_cost(filename):
 ```
 
 Bu kodu yol gösterici olarak kullanırsak, `report.py` isimli yeni bir dosya açalım. Bu dosyada,
-`read_portfolio(filename)`adlı bir fonksiyon tanımlayalım ,bu portföyü okusun ve bize bir tuple listesi versin. 
-Bunu yapmak için,yukarıdaki kodunuzda birkaç değişiklik yapacaksınız.
+`read_portfolio(filename)`adlı bir fonksiyon tanımlayalım, bu portföyü okusun ve bize bir tuple listesi versin. 
+Bunu yapmak için, yukarıdaki kodunuzda birkaç değişiklik yapacaksınız.
 
-İlk olarak,bir değişken tanımlayalım `total_cost = 0`ve bir boş liste tanımlıcaksınız.
+İlk olarak, bir değişken tanımlayalım `total_cost = 0`ve bir boş liste tanımlıcaksınız.
 Örneğin:
 
 ```python
@@ -257,7 +257,7 @@ for row in rows:
 
 Son olarak, sonucu `portfolio` listesinde bulacaksın.
 
-Fonksiyonunuzda denemeler yapın(hatırlatma olarak:bunu yapmak için,
+Fonksiyonunuzda denemeler yapın(hatırlatma olarak: bunu yapmak için,
  `report.py` dosyasını komut istemcisinde çalıştırman gerekir):
 
 *İpucu: `-i` komutu ile terminalden dosyayı çalıştırılır*
@@ -302,10 +302,10 @@ Bu bahsedileni, for-loop u kullanarak tekrar yazabilirsiniz.Şu şekilde:
 ### Alıştırma 2.5: Sözlüklerin Listesi
 
 Alıştırma 2.4  kullanılan fonksiyonu alalım ve portföydeki her bir hisseyi tuple yerine sözlükle tanımlayalım.
-Bu sözlükte parça isimleri olarak "name", "shares" ve "price" kullanalım ,bunlar farklı sütünları
+Bu sözlükte parça isimleri olarak "name", "shares" ve "price" kullanalım, bunlar farklı sütünları
 temsil edecektir.
 
-Bu yeni fonksiyonu alıştırma 2.4 deki ile aynı şekilde deneyin..
+Bu yeni fonksiyonu alıştırma 2.4 deki ile aynı şekilde deneyin.
 
 ```python
 >>> portfolio = read_portfolio('Data/portfolio.csv')
@@ -351,7 +351,7 @@ temizlemek için `pprint`fonksiyonunu kullanabilirsin.
 
 ### Alıştırma 2.6: Containers olarak Sözlükler
 
-Sözlük, öğeleri istediğiniz yerde takip etmek için yararlı bir yapıdır . Python shell(kabuk)unda,
+Sözlük, öğeleri istediğiniz yerde takip etmek için yararlı bir yapıdır. Python shell(kabuk)unda,
 sözlüklerle uğraşmayı deneyelim:
 
 ```python
@@ -412,7 +412,7 @@ Diğer bir karmaşıklık `Data/prices.csv` dosyası boş satırlar içeriyor ol
 Farkına varmak zor değil bunun anlamı bu satırda herhangi bir verinin olmadığıdır.
 
 Bunun programınızın düzgün çalışmasını engelleme ihtimali vardır. `try`- `except` ifadesini kullanarak
-bu hataları yakalayabilirsiniz.  Düşünce : Bozuk verilere karşı 'if' ifadesini kullanmak daha mı yararlı olurdu ?
+bu hataları yakalayabilirsiniz.  Düşünce: Bozuk verilere karşı 'if' ifadesini kullanmak daha mı yararlı olurdu ?
 
 `read_prices()` fonksiyonun yazdıktan sonra, interaktif komut istemcinizde çalıştırarak
 çalıştığını kontrol edin :
@@ -428,7 +428,7 @@ bu hataları yakalayabilirsiniz.  Düşünce : Bozuk verilere karşı 'if' ifade
 
 ### Alıştırma 2.7: Emekli olup olmayacağınızı öğrenmek
 
- `report.py`programınıza birkaç ifade ekleyerek tüm çalışmayı birbirine bağlayın.  Bu ifadeler size Alıştırma 2.5 deki hisseleri , 
+ `report.py`programınıza birkaç ifade ekleyerek tüm çalışmayı birbirine bağlayın. Bu ifadeler size Alıştırma 2.5 deki hisseleri, 
 Alıştırma 2.6 daki sözlükteki fiyatları ve mevcut portföydeki değerleri ile bir kazanç/kayıp hesabı yapsın.
 
 [Contents](../Contents.md) \| [Previous (2.1 Datatypes)](01_Datatypes.md) \| [Next (2.3 Formatting)](03_Formatting.md)
