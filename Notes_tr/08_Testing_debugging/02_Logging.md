@@ -6,7 +6,7 @@ Bu bölümde kısaca logging modülü anlatılıyor.
 
 ### logging Modülü
 
-logging modülü teşhis bilgilerini(except bloğunun çıktısı) kayıt eden standard Python kütüphanesidir. 
+logging modülü teşhis bilgilerini (except bloğunun çıktısı) kayıt eden standard Python kütüphanesidir. 
 Aynı zamanda, birçok gelişmiş işlevi bulunan büyük bir modüldür. 
 Şimdi ne kadar kullanışlı olduğunu göstermek için basit bir örnek yapacağız.
 
