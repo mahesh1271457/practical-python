@@ -45,7 +45,7 @@ Generator `yield` ifadesini kullanan herhangi bir fonksiyondur.
 
 Generators davranışı normal bir fonksiyondan farklıdır.
 Generator fonksiyonunu çağırmak ,bir generator objesi oluşturur. Bu 
-fonksiyonu hemen çalıştırmaz
+fonksiyonu hemen çalıştırmaz.
 
 ```python
 def countdown(n):
@@ -105,7 +105,7 @@ düşük seviyeli protokol uygular.*
 
 ### Alıştırma 6.4: Basit Bir Generator
 
-Eğer iteration özelleştirmek ile ilgili bişeyler arıyorsanız,her zaman 
+Eğer iteration özelleştirmek ile ilgili bişeyler arıyorsanız, her zaman 
 generator fonksiyonunu düşünmelisiniz.  İşte yazması kolay ---istenilen iteration 
 mantığını gerçekleştiren bir fonksiyon ve değerleri yaymak için  `yield`
 ifadesi.
@@ -148,7 +148,7 @@ Generators gerçek zamanlı veri kaynaklarını izlemenin ilginç bir yolu olabi
 log dosyaları veya hisse senet fiyatları gibi. Bu bölümde,bu fikri göreceğiz.  
 Başlamak için sonraki talimatları dikkatlice izleyin.
 
-`Data/stocksim.py` programı borsayı simile edecektir.Çıktı olarak,gerçek zamanlı olarak `Data/stocklog.csv` 
+`Data/stocksim.py` programı borsayı simüle edecektir.Çıktı olarak,gerçek zamanlı olarak `Data/stocklog.csv` 
 dosyasına veriyi yazacaktır.  Ayrı iki komut penceresinde `Data/`dizine gidip programı çalıştırınız:
 
 ```bash
@@ -157,7 +157,7 @@ bash % python3 stocksim.py
 
 Eğer windows üzerindeyseniz , `stocksim.py` programını bulun ve
 çift tıklayarak çalıştırın.  Şimdi programı unutun. (sadece çalıştırın). 
-Başka bir pencerede, `Data/stocklog.csv` dosyasına bakın ,dosyayı simüle etmeye başlamış mı. 
+Başka bir pencerede, `Data/stocklog.csv` dosyasına bakın ,dosyayı simüle etmeye başlamış mı? 
 Her saniye yeni satırlara yazılar eklendiğini göreceksiniz.  Tekrar,
 programı arkaplanda çalıştıralım---birkaç saat çalışacaktır.
 (bunu dert etmenize gerek yok).
@@ -252,7 +252,7 @@ if __name__ == '__main__':
 
 Az önce burada çok güçlü bir şey oldu. 
 İlginç bir iteration modelini (bir dosyanın sonundaki satırları okuyarak) kendi küçük fonksiyonunuza
-taşıdınız. follow() fonksiyonu  artık herhangi bir programda kullanabileceğiniz tamamen genel
+taşıdınız. `follow()` fonksiyonu  artık herhangi bir programda kullanabileceğiniz tamamen genel
 amaçlı yardımcı programdır. Örneğin, server loglarını, debugging loglarını ve diğer benzer veri kaynaklarını izleyebilirsiniz.
 
 [Contents](../Contents.md) \| [Previous (6.1 Iteration Protocol)](01_Iteration_protocol.md) \| [Next (6.3 Producer/Consumer)](03_Producers_consumers.md)
