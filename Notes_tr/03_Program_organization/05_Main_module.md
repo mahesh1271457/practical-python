@@ -54,6 +54,7 @@ if __name__ == '__main__':
 ### Ana Programlar vs Kütüphane Import'u
 
 Herhangi bir python dosyası main olarak veya kütüphanenin importu olarak çalışabilir:
+
 ```bash
 bash % python3 prog.py # Ana program olarak çalışıyor
 ```
@@ -62,7 +63,7 @@ bash % python3 prog.py # Ana program olarak çalışıyor
 import prog   # Kütüphane importu olarak çalışıyor
 ```
 
-Her iki durumda da, `__name__` modülün adıdır.  Ancak, main olarak çalışıyorsa yalnızca `__main__` olarak ayarlanacaktır.
+Her iki durumda da, `__name__` modülün adıdır. Ancak, main olarak çalışıyorsa yalnızca `__main__` olarak ayarlanacaktır.
 
 Genellikle ana programın parçası olan ifadelerin bir kütüphane 
 importunda yürütülmesini istemezsiniz. Bu nedenle, her iki şekilde de
