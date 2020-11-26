@@ -5,7 +5,7 @@
 `collections` modulü veriyi ele almak için kullanışlı objeler sağlar.
 Bu bölüm, bu özelliklerden bazılarını kısaca tanıtır.
 
-### Örneğin: Bişeyleri Saymak
+### Örneğin: Bir şeyleri saymak
 
 Her hisse senedinin ,toplam hisselerini tablo haline getirmek istediğinizi varsayalım.
 
@@ -66,7 +66,7 @@ holdings['IBM'] # [ (50, 91.1), (100, 45.23) ]
 
 ### Örnek: Bir geçmiş tutmak
 
-Problem: N tane şeyin önceki hallerini tutmak istiyoruz .
+Problem: N tane şeyin önceki hallerini tutmak istiyoruz.
 Çözüm: `deque` kullanın.
 
 ```python
@@ -121,7 +121,7 @@ Sözlük gibi bir tek tek değerleri almak için bir Sayaç(counter) kullanabili
 >>>
 ```
 
-Eğer değerleri sıralamak istiyorsanız ,şunu deneyin:
+Eğer değerleri sıralamak istiyorsanız, şunu deneyin:
 
 ```python
 >>> # Get three most held stocks
@@ -157,7 +157,7 @@ Counter({'MSFT': 275, 'HPQ': 250, 'GE': 220, 'AA': 150, 'IBM': 150, 'CAT': 150})
 ```
 
 Bu, sayaçların sağladığının sadece küçük bir tadıydı. Ancak siz kendiniz 
-değerleri tablolamak isterseniz, kullanmayı düşünmelisiniz
+değerleri tablolamak isterseniz kullanmayı düşünmelisiniz.
 
 ### Yorum: collections module(koleksiyon modülü)
 
