@@ -118,7 +118,7 @@ Biçimsel olarak, fonksiyonların *aşağıdan yukarıya* şeklinde tanımlanmas
 ### Aşağıdan Yukarıya Şeklinde
 
 Fonksiyonlar, yapı taşları olarak kabul edilir.
-Daha küçük/daha basit bloklar önce gelir.
+Daha küçük / daha basit bloklar önce gelir.
 
 ```python
 # myprogram.py
