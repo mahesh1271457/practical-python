@@ -405,7 +405,7 @@ Yukarıdaki çıktıya dikkat edin. `items` listesinin 3 elamanı da bir listede
 ```
 
 Teknik olarak çok karmaşık bir liste yapmak mümkün olsa da, genel bir kural olarak, işleri basit tutmak isteyebilirsiniz.
-Genellikle, listeleri, aynı türdeki elemanları tutmak için kullanılır.
+Genellikle listeler, aynı türdeki elemanları tutmak için kullanılır.
 Örneğin tamamen sayılardan veya bir metin listesinden oluşan bir liste. Aynı listede farklı türdeki 
 verileri bir araya getirmek genellikle kafanızı patlatmanın iyi bir yoludur, 
 bu yüzden en iyisi bundan kaçınmaktır.
