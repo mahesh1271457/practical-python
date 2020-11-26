@@ -20,7 +20,7 @@ Birçok üçüncü taraf modülü var. Bunlara ulaşmak için [Python Package In
 >>>
 ```
 
-Eğer herhangi bir şeyi import ederseniz ve import ettiğiniz şey bu dizinlerden birinde değilse `ImportError`r hatası alacaksınızdır.
+Eğer herhangi bir şeyi import ederseniz ve import ettiğiniz şey bu dizinlerden birinde değilse `ImportError` re hatası alacaksınızdır.
 
 
 ### Standart Kütüphane Modülleri
