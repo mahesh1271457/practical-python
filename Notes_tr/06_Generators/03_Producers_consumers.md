@@ -38,7 +38,7 @@ def producer():
     ...
 ```
 
-Üretici tipik olarak bir generator’dur. Yine de başka bir dizinin listesi olabilir. `yield` verileri pipeline’a besler.
+Üretici tipik olarak bir generator’dur. Yine de başka bir dizinin listesi olabilir. `yield` verileri pipeline’ı besler.
 
 *üretici* &rarr; *işleme* &rarr; *işleme* &rarr; **tüketici**
 
