@@ -28,10 +28,10 @@ b = foo.spam('Hello')
 ```
 
 ### Namespaces (İsim Alanı)
- Modül,adlandırılmış değerler topluluğudur ve bazen 
+ Modül, adlandırılmış değerler topluluğudur ve bazen 
 *isim alanı* olduğu söylenir. Adlar, kaynak dosyada 
-tanımlanan tüm genel değişkenler ve işlevlerdir.İçe 
-aktarmadansonra modül ismi ön ek olarak kullanılır.
+tanımlanan tüm genel değişkenler ve işlevlerdir. İçe 
+aktarmadan sonra modül ismi ön ek olarak kullanılır.
 Bu nedenle *isim alanı*'dır.
 
 ```python
@@ -45,8 +45,8 @@ b = foo.spam('Hello')
 Modül ismi doğrudan dosya ismine bağlıdır (foo -> foo.py).
 
 ### Global Tanımlar
- *Global* kapsamında tanımlanan her şey,modül,*isim alanı*'nı
-dolduran şeydir.İkisi de aynı `x` değişkeni tanımlayan iki modülü
+ *Global* kapsamında tanımlanan her şey, modül, *isim alanı*'nı
+dolduran şeydir. İkisi de aynı `x` değişkeni tanımlayan iki modülü
 değerlendirelim.
 
 ```python
@@ -64,7 +64,7 @@ def spam(a):
 ```
 
 Bu durumda,`x` tanımları farklı değişkenleri ifade eder.
-Birisi `foo.x`,bir diğeri ise `bar.x`'dir. Farklı modüller
+Birisi `foo.x`, bir diğeri ise `bar.x`'dir. Farklı modüller
 aynı isimleri kullanabilir ve bu isimler ve birbiriyle çelişmez.
 
 **Modüller izole edilir.**
@@ -86,7 +86,7 @@ Her kaynak dosya kendi küçük evrenidir.
 ### Modül Yürütme
  Bir modül içe aktarıldığında, *modüldeki tüm ifadeler* dosyanın 
 sonuna ulaşılana kadar birbiri ardına çalıştırılır. Modül isim
-alanının içeriği,yürütme işleminin sonunda hala tanımlanan 
+alanının içeriği, yürütme işleminin sonunda hala tanımlanan 
 *global* adların tümüdür. Eğer genel kapsamda görevleri yürüten 
 bir komut dosyası ifadesi (yazdırma,dosya oluşturma,vb.) varsa,
 onları içe aktarım sırasında çalıştığını göreceksiniz.
@@ -102,7 +102,7 @@ def rectangular(r, theta):
     y = r * m.sin(theta)
     return x, y
 ```
- Normal bir alma işlemiyle aynı şekilde çalışır.Sadece o dosyadaki 
+ Normal bir alma işlemiyle aynı şekilde çalışır. Sadece o dosyadaki 
 modülün ismini yeniden adlandırır.
 
 ### `from` modül alma
@@ -132,7 +132,7 @@ import math as m
 from math import cos, sin
 ...
 ```
-Özellikle,`import` her zaman bütün dosyayı yürütür ve modüller
+Özellikle, `import` her zaman bütün dosyayı yürütür ve modüller
 hala yalıtılmış ortamlardır.
 
 `import module as` ifadesi sadece yerel olarak adı değiştiriyor.
@@ -143,7 +143,7 @@ kopyalar.
 ### Modül İndirme
 
 Her modül *yalnızca bir kez* yüklenir ve çalıştırılır.
-*Not:Tekrarlanan içe aktarmalar sadece önceden yüklenen modüle bir referans 
+*Not: Tekrarlanan içe aktarmalar sadece önceden yüklenen modüle bir referans 
 döndürür.*
   
 `sys.modules` yüklenen tüm modüllerin diktesidir. 
@@ -156,7 +156,7 @@ döndürür.*
 >>>
 ```
 
-*Dikkat*:Eğer `import`(içe aktarma) ifadesi bir modülün kaynak kodu değiştikten sonra tekrarlanırsa,
+*Dikkat*: Eğer `import`(içe aktarma) ifadesi bir modülün kaynak kodu değiştikten sonra tekrarlanırsa,
 sık karşılaşılan bir karışklık ortaya çıkar. `sys.modules` modül önbelleği nedeniyle, tekrarlanan içe aktarımlar
 her zaman bir önceki yüklenen modüle döner--bir değişiklik yapılsa bile. Değiştirilen kodu Python'a 
 yüklemenin en güvenli yolu, yorumcuyu kapatıp tekrar başlatmaktır.
@@ -174,7 +174,7 @@ yüklemenin en güvenli yolu, yorumcuyu kapatıp tekrar başlatmaktır.
   ...
 ]
 ```
-Geçerli çalşma dizini genellikle ilk olandır.
+Geçerli çalışma dizini genellikle ilk olandır.
 
 
 ### Modül Arama Yolu
@@ -195,8 +195,8 @@ Python 3.6.0 (default, Feb 3 2017, 05:53:21)
 >>> sys.path
 ['','/project/foo/pyfiles', ...]
 ```
-Genel kural olarak,modül arama yolunu manuel olarak ayarlamak gerekli olmamalıdır.
-Ancak,bazen olağandışı bir konumda bulunan Python kodunu içe aktarmak veya
+Genel kural olarak, modül arama yolunu manuel olarak ayarlamak gerekli olmamalıdır.
+Ancak, bazen olağandışı bir konumda bulunan Python kodunu içe aktarmak veya
 kolayca erişilemeyen mevcut çalışma dizininden dolayı ortaya çıkar. 
 
 ## Alıştırmalar
@@ -212,7 +212,7 @@ gerekir.
 ### Alıştırma 3.11: Modül Alma
 
 Bölüm 3'te CSV veri dosyalarının içeriğini ayrıştırmak için genel bir amaç
-işlevi `parse_csv()` oluşturduk. Şimdi,bu fonksiyonu diğer programlarda nasıl kullanacağımızı
+işlevi `parse_csv()` oluşturduk. Şimdi, bu fonksiyonu diğer programlarda nasıl kullanacağımızı
 göreceğiz. İlk olarak yeni bir shell penceresi açmakla başlayın.
 Tüm dosyalarınızın bulunduğu klasöre gidin. Onları içe aktaracağız.
 
@@ -240,7 +240,7 @@ Sadece vurgulamak için, bir modülü içe aktarma onun kodunu çalıştırır.
 ```
 
 Eğer hiçbirisi çalışmazsa, büyük ihtimalle Python'ı yanlış bir dizinde çalıştırıyorsunuz.
-Şimdi,`fileparse` modülü içe aktarmaya çalış ve bu konuda biraz yardım almayı deneyin.
+Şimdi, `fileparse` modülü içe aktarmaya çalışın ve bu konuda biraz yardım almayı deneyin.
 
 ```python
 >>> import fileparse
@@ -298,7 +298,7 @@ Bu alıştırmanın başındaki etkileşimli örneği kılavuz olarak kullanın.
 
 
 ### Alıştırma 3.14: Daha Fazla Kütüphane İçe Aktarımı Kullanma
- 1.bölümde,bir portföyü okuyan ve maliyetini hesaplayan bir `pcost.py`
+ 1.bölümde, bir portföyü okuyan ve maliyetini hesaplayan bir `pcost.py`
 programı yazdınız.
 
 ```python
@@ -311,8 +311,8 @@ programı yazdınız.
 
 ## Yorum
 Bu alıştırmayı bitirince, elinde 3 tane programın olması gerekir.
-Genel bir amaç içeren `fileparse.py`, `parse_csv()` işlevi,güzel bir rapor
-oluşturan `report.py`,ancak ayrıca `read_portfolio()` ve `read_prices()` işlevlerini
+Genel bir amaç içeren `fileparse.py`, `parse_csv()` işlevi, güzel bir rapor
+oluşturan `report.py`, ancak ayrıca `read_portfolio()` ve `read_prices()` işlevlerini
 de içerir. Ve son olarak, portföy maliyetini hesaplayan ancak `report.py` programı için
 yazılmış `read_portfolio()` işlevini kullanan `pcost.py`.
 
