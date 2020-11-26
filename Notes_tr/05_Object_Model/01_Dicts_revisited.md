@@ -2,7 +2,7 @@
 
 # 5.1 Yeniden Ziyaret Edilen Sözlükler
 
-Python nesne sistemi, büyük ölçüde sözlükleri içeren bir uygulamaya dayanmaktadır. Bu bölüm bunu tartışıyor.
+Python nesne sistemi, büyük ölçüde sözlükleri içeren bir uygulamaya dayanmaktadır. Bu bölüm bunu ele alıyor.
 
 ### Sözlükler, Terar Ziyaret Etme
 
@@ -167,7 +167,7 @@ x = obj.name
 ```
 Bu nitelik iki yerde bulunabilir:
 
-* Yerel nesen sözlüğü.
+* Yerel nesne sözlüğü.
 * Sınıf sözlüğü.
 
 Her iki sözlük de kontrol edilmeli. Önce yerel __dict__ olarak kontrol edin. Eğer bulunmazsa __class__ üzerinden __dict__ sınıfına bakın.
@@ -215,7 +215,7 @@ class C(A): pass
 class D(B): pass
 class E(D): pass
 ```
-Tek kalıtımla, tepeye giden tek yol vardır. İlk eşleşmede durursun.
+Tek kalıtımla, tepeye giden tek yol vardır. İlk eşleşmede durur.
 
 ### Method Resolution Order (Method Çözüm Sırası) veya MRO 
 
@@ -328,7 +328,7 @@ Mucizevi bir şekilde, loudness şimdi yalnızca bir kez uygulandı ve tamamen i
 
 ### Neden `super()`
 
-Metotları override yaparken her zaman `super()` kullnırız.
+Metotları override yaparken her zaman `super()` kullanırız.
 
 ```python
 class Loud:
