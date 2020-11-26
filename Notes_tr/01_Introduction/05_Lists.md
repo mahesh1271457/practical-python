@@ -13,8 +13,8 @@ names = [ 'Elwood', 'Jake', 'Curtis' ]
 nums = [ 39, 38, 42, 65, 111]
 ```
 
-Bazen listeler farklı metotlarda oluşturulabilir.  Örneğin, stringler split() fonksiyonu ile 
-parçalanarak bir liste haline gelir :
+Bazen listeler farklı metotlarda oluşturulabilir. Örneğin, stringler split() fonksiyonu ile 
+parçalanarak bir liste haline gelir:
 
 ```python
 >>> line = 'GOOG,100,490.10'
@@ -29,8 +29,8 @@ parçalanarak bir liste haline gelir :
 Listeler herhangi tipte değerleri tutabilirler. `append()` ile listeye yeni elemanlar ekleyebiliriz:
 
 ```python
-names.append('Murphy')    # sona ekler
-names.insert(2, 'Aretha') # ortaya ekler
+names.append('Murphy')    # Sona ekler
+names.insert(2, 'Aretha') # Ortaya ekler
 ```
 
 `+` ile listeleri birleştirebiliriz:
@@ -41,7 +41,7 @@ t = ['a', 'b']
 s + t           # [1, 2, 3, 'a', 'b']
 ```
 
-Listeler integerlar ile indexlenir . 0 'dan başlayarak.
+Listeler integerlar ile indexlenir. 0 'dan başlayarak.
 
 ```python
 names = [ 'Elwood', 'Jake', 'Curtis' ]
@@ -107,7 +107,7 @@ names.index('Curtis')   # 2
 
 Eğer aradığımız eleman birden fazla varsa, `index()` fonksiyonu ilk sıradakini gösterir.
 
-Eğer eleman bulunmuyorsa,  `ValueError` hatasını alacaksınız.
+Eğer eleman bulunmuyorsa, `ValueError` hatasını alacaksınız.
 
 ### Listeden Çıkartma
 
@@ -160,13 +160,13 @@ t = sorted(s)               # s değiştirilmemiş, t ise sıralanmış veriyi t
 [1, 2, 3, 4, 5, 10, 11, 12, 13, 14]
 ```
 
-Özellikle, listeler vektörler/matrisler için değildir . (MATLAB, Octave, R, etc.)
+Özellikle, listeler vektörler/matrisler için değildir (MATLAB, Octave, R, etc.).
 Ancak bunun için bazı paketler ve modüller varıdr. (e.g. [numpy](https://numpy.org)).
 
 ## Alıştırmalar
 
 Bu alıştırmalarda, Python'ın liste şekillerini inceliyeceğiz. Bu bölümde,
-hisse kısaltmaları olan 'symbols' stringini ele alacağız.
+hisse kısaltmaları olan 'symbols' string'ini ele alacağız.
 
 ```python
 >>> symbols = 'HPQ,AAPL,IBM,MSFT,YHOO,DOA,GOOG'
@@ -222,7 +222,7 @@ Boş bir liste oluşturup ekleme yapalım.
 ['GOOG']
 ```
 
-Listenin bir bölümünü başka bir listeye atayabilirsiniz .Örneğin:
+Listenin bir bölümünü başka bir listeye atayabilirsiniz. Örneğin:
 
 ```python
 >>> symlist[-2:] = mysyms
@@ -231,7 +231,7 @@ Listenin bir bölümünü başka bir listeye atayabilirsiniz .Örneğin:
 >>>
 ```
 
-Bunu yaptığında, sol taraftaki liste (`symlist`) diğeri (`mysyms`) gibi olmak için yeniden boyutlandırılacaktır .
+Bunu yaptığında, sol taraftaki liste (`symlist`) diğeri (`mysyms`) gibi olmak için yeniden boyutlandırılacaktır.
 Örneğin, yukarıdaki örnekte, `symlist` son 2 sıradaki elemanı, `mysyms` deki tek eleman ile değiştirildi.
 
 ### Alıştırma 1.20: Liste üzerinde döngü
@@ -371,7 +371,7 @@ Stringlerin listesi alıp tekrar onları bir stringde bileştirmek mi istiyorsun
 
 ### Alıştırma 1.25: Herhangi bir şeyin listesi
 
-Herhangi bir objenin listesini yapabilirsin, buna başka listelerde dahil. (örneğin iç içe geçmiş listeler).
+Herhangi bir objenin listesini yapabilirsin, buna başka listeler de dahil (örneğin iç içe geçmiş listeler).
 Şunu deneyelim:
 
 ```python
@@ -381,7 +381,7 @@ Herhangi bir objenin listesini yapabilirsin, buna başka listelerde dahil. (örn
 ['spam', ['YHOO', 'RHT', 'HPQ', 'GOOG', 'AIG', 'AAPL', 'AA'], [101, 102, 103]]
 ```
 
-Yukarıdaki çıktıya dikkat edin. `items` listesinin 3 elamanıda bir listede.
+Yukarıdaki çıktıya dikkat edin. `items` listesinin 3 elamanı da bir listede.
 İlk eleman bir string ama diğer elemanlar bir liste.
 
 İç içe listelerde birden fazla defa index sorgusu ile erişebilirsin.
@@ -404,9 +404,9 @@ Yukarıdaki çıktıya dikkat edin. `items` listesinin 3 elamanıda bir listede.
 >>>
 ```
 
-Teknik olarak çok karmaşık bir liste yapmak mümkün olsa da
-, genel bir kural olarak, işleri basit tutmak isteyebilirsiniz. Örneğin
- tamamen sayılardan veya bir metin listesinden oluşan bir liste. Aynı listede farklı türdeki 
+Teknik olarak çok karmaşık bir liste yapmak mümkün olsa da, genel bir kural olarak, işleri basit tutmak isteyebilirsiniz.
+Genellikle, listeleri, aynı türdeki elemanları tutmak için kullanılır.
+Örneğin tamamen sayılardan veya bir metin listesinden oluşan bir liste. Aynı listede farklı türdeki 
 verileri bir araya getirmek genellikle kafanızı patlatmanın iyi bir yoludur, 
 bu yüzden en iyisi bundan kaçınmaktır.
 
