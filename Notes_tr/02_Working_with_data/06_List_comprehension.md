@@ -1,7 +1,7 @@
 [Contents](../Contents.md) \| [Previous (2.5 Collections)](05_Collections.md) \| [Next (2.7 Object Model)](07_Objects.md)
 
 # 2.6 Liste işlevleri (list comprehension)
-Python’da listeler yaygın olarak kullanılır. Bu bölümde listedeki elemanları işlemek/değiştirmek için güçlü bir araç olan liste işlevlerini (list comprehension)  anlatacağım.
+Python’da listeler yaygın olarak kullanılır. Bu bölümde listedeki elemanları işlemek/değiştirmek için güçlü bir araç olan liste işlevlerini (list comprehension) anlatacağım.
 
 ### Yeni liste oluşturmak
 Liste işlevlerini kullanarak bir dizideki her elemanı belli bir işleme sokarak yeni bir liste oluşturabilirsiniz.
@@ -61,7 +61,7 @@ cost = sum([s['shares']*s['price'] for s in stocks])
 ```
 
 
-Genel yazım kuralımız (syntax) böyle diyebiliriz :
+Genel yazım kuralımız (syntax) böyle diyebiliriz:
 ```code
 [ <işlem> for <değişken_adı> in <dizi> if <koşul>]
 ```
@@ -98,7 +98,7 @@ bash % python3 -i report.py
 
 Python’un interaktif arayüzüne girdik. Aşağıda belirtilen işlemleri yapmak için gerekli ifadeleri yazalım. Bu işlemler kullanacağımız veri üzerinde indirgeme, dönüşüm ve bazı sorgular (query) yapıyor.
 
-### Alıştırma 2.19 : Liste işlevleri
+### Alıştırma 2.19 : Liste İşlevleri
 
 Yazım kurallarına ve kullanmaya kendimizi alıştırmak için birkaç basit liste işlevi kodu yazalım. 
 
@@ -190,7 +190,7 @@ $10000’dan daha maliyetli olan porföy varlıklarını bulalım.
 
 ### Alıştırma 2.22: Veri Çekmek(extract)
 
-Şimdi de (isim, paylar) şeklinde demetlerden (tuple) oluşan bir liste oluşturalım. İsim ve paylar verilerini portföy veri setinden çekeceğiz.
+Şimdi de `(isim, paylar)` şeklinde demetlerden (tuple) oluşan bir liste oluşturalım. `isim` ve `paylar` verilerini portföy veri setinden çekeceğiz.
 
 ```python
 >>> name_shares =[ (s['name'], s['shares']) for s in portfolio ]
@@ -199,7 +199,7 @@ $10000’dan daha maliyetli olan porföy varlıklarını bulalım.
 >>>
 ```
 
-Kare parantezleri ( ‘[]’ ) küme paranteziyle ( ‘{}’ ) değiştirirsek kullandığımız ‘liste işlevleri’ ‘küme işlevleri’ne (set comprehension) dönüşür. Matematikte olduğu gibi pythonda da kümelerdeki değerler eşsizdir, her eleman farklı bir değere sahiptir.
+Kare parantezleri ( `[`,`]` ) küme paranteziyle ( `{`,`}` ) değiştirirsek kullandığımız ‘liste işlevleri’ ‘küme işlevleri’ne (set comprehension) dönüşür. Matematikte olduğu gibi pythonda da kümelerdeki değerler eşsizdir, her eleman farklı bir değere sahiptir.
 
 Bu küme işlevini kullanarak portföy veri setindeki tüm hisse isimlerinin kümesini bulalım.
 
@@ -210,20 +210,32 @@ Bu küme işlevini kullanarak portföy veri setindeki tüm hisse isimlerinin kü
 >>>
 ```
 
-Eğer ‘anahtar:değer’ çiftleri belirtirsek bir sözlük oluşturabiliriz. Örnek olarak hisse isimleri ve tuttukları toplam payları eşleyen bir sözlük oluşturalım. Buna ‘sözlük işlevleri’ (dictionary comprehension) deniyor.
+Eğer `anahtar:değer` çiftleri belirtirsek bir sözlük oluşturabiliriz. Örnek olarak hisse isimleri ve tuttukları toplam payları eşleyen bir sözlük oluşturalım. 
 
 ```python
 >>> holdings = { name: 0 for name in names } # Sözlüğü oluşturuyoruz.
 >>> holdings
 {'AA': 0, 'GE': 0, 'IBM': 0, 'MSFT': 0, 'CAT': 0}
 >>>
+```
+Buna **sözlük işlevleri (dictionary comprehension)** deniyor. Hadi tablo haline getirelim:
+
+```python
 >>> for s in portfolio:                      # Hisse isimleriyle tuttukları
         holdings[s['name']] += s['shares']   # toplam payı eşliyoruz.
 
 >>> holdings
 { 'AA': 100, 'GE': 95, 'IBM': 150, 'MSFT':250, 'CAT': 150 }
 >>>
+```
 
+`prices` sözlüğünü yalnızca portföyde görünen adlara göre filtreleyen bu örneği deneyin:
+
+```python
+>>> portfolio_prices = { name: prices[name] for name in names }
+>>> portfolio_prices
+{'AA': 9.22, 'GE': 13.48, 'IBM': 106.28, 'MSFT': 20.89, 'CAT': 35.46}
+>>>
 ```
 
 ### Alıştırma 2.23 CSV dosyalarından veri çekmek(extract)
@@ -282,8 +294,7 @@ Az önce yaptığımız işlemleri rahatça anladıysanız, geri kalan kısmı d
 Vay be, read_portfolio() fonksiyonunun büyük bir kısmını tek bir ifadeye indirgedik.
 
 
-
-### 
+### Yorum
 
 Liste işlevleri genelde python’da veriyi dönüştürmenin, filtrelemenin ve veri toplamanın verimli bir yolu olarak kullanılır. Yazım kurallarından dolayı aşırı uzun liste işlevi yazmamak okunabilirlik açısından daha iyi olacaktır, bu yüzden liste işlevlerini olabildiğince kısa tutmaya çalışın. Her şeyi tek adımda yapmak zorunda değiliz sonuçta, yapacağımız işlemi bir adım yerine birkaç adımda yapmak daha iyi olacaktır. 
 
