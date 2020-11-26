@@ -271,3 +271,5 @@ CAT,78.05,-0.47
 ### Tartışma
 
 Alınan bazı dersler: Çeşitli generator fonksiyonları oluşturabilir ve veri akışı pipeline’larını içeren işlemleri gerçekleştirmek için bunları birbirine bağlayabilirsiniz. Ek olarak, bir dizi işlem pipieline’ını tek bir fonksiyon çağrısında paketleyen fonksiyonlar (örneğin, `parse_stock_data()` fonksiyonu) oluşturabilirsiniz.
+
+[Contents](../Contents.md) \| [Previous (6.2 Customizing Iteration)](02_Customizing_iteration.md) \| [Next (6.4 More Generators)](04_More_generators.md)
