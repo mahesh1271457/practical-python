@@ -2,11 +2,16 @@
 
 # 5.2 Sınıflar ve Kapsülleme
 
-Sınıfları yazarken, iç detayları denemek ve kapsüllemek yaygındır. Bu bölüm, özel değişkenler ve özellikler de dahil olmak üzere bunun için birkaç Python programlama deyimini tanıtır.
+Sınıfları yazarken, iç detayları denemek ve kapsüllemek yaygındır. 
+Bu bölüm, özel değişkenler ve özellikler de dahil olmak üzere bunun 
+için birkaç Python programlama deyimini tanıtır.
 
 ### Private vs Public.
 
-Bir sınıfın birincil rollerinden biri, bir nesnenin verilerini ve dahili uygulama ayrıntılarını kapsüllemektir. Bununla birlikte, bir sınıf aynı zamanda dış dünyanın nesneyi işlemek için kullanması gereken bir *public* arabirimi de tanımlar. Uygulama ayrıntıları ile genel arayüz arasındaki bu ayrım önemlidir.
+Bir sınıfın birincil rollerinden biri, bir nesnenin verilerini ve dahili 
+uygulama ayrıntılarını kapsüllemektir. Bununla birlikte, bir sınıf aynı zamanda dış
+dünyanın nesneyi işlemek için kullanması gereken bir *public* arabirimi de tanımlar. 
+Uygulama ayrıntıları ile genel arayüz arasındaki bu ayrım önemlidir.
 
 ### Bir Problem
 
@@ -14,13 +19,15 @@ Python'da, sınıflar ve nesneler hakkında neredeyse her şey *açıktır*.
 
 * Nesne iç kısımlarını kolayca inceleyebilirsiniz.
 * Bir şeyleri istediğiniz zaman değiştirebilirsiniz.
-* Güçlü bir erişim kontrolü kavramı yoktur (yani, private sınıf üyeleri)
+* Güçlü bir erişim kontrolü kavramı yoktur (yani, private sınıf üyeleri).
 
 *İç uygulamanın* ayrıntılarını izole etmeye çalışırken bu bir sorundur.
 
 ### Python Kapsamlama
 
-Python, bir şeyin amaçlanan kullanımını belirtmek için programlama kurallarına güvenir. Bu kurallar isimlendirmeye dayanmaktadır. Kurallara uymanın dil tarafından uygulanmasına karşın programcıya bağlı olduğuna dair genel bir tutum vardır.
+Python, bir şeyin amaçlanan kullanımını belirtmek için programlama kurallarına güvenir. 
+Bu kurallar isimlendirmeye dayanmaktadır. Kurallara uymanın dil tarafından uygulanmasına
+karşın programcıya bağlı olduğuna dair genel bir tutum vardır.
 
 ### Private Özellikler
 
@@ -32,7 +39,8 @@ class Person(object):
         self._name = 0
 ```
 
-Daha önce de belirtildiği gibi, bu yalnızca bir programlama stilidir. Yine de erişebilir ve değiştirebilirsiniz.
+Daha önce de belirtildiği gibi, bu yalnızca bir programlama stilidir. 
+Yine de erişebilir ve değiştirebilirsiniz.
 
 ```python
 >>> p = Person('Guido')
@@ -41,7 +49,10 @@ Daha önce de belirtildiği gibi, bu yalnızca bir programlama stilidir. Yine de
 >>> p._name = 'Dave'
 >>>
 ```
-Genel bir kural olarak, başında `_` bulunan herhangi bir ad, ister değişken, ister fonksiyon, ister metod adı olsun, dahili uygulama olarak kabul edilir. Kendinizi bu tür isimleri doğrudan kullanırken bulursanız, muhtemelen yanlış bir şeyler yapıyorsunuzdur. Daha yüksek düzeyde fonksiyonellik arayın.
+Genel bir kural olarak, başında `_` bulunan herhangi bir ad, ister değişken, 
+ister fonksiyon, ister metod adı olsun, dahili uygulama olarak kabul edilir. 
+Kendinizi bu tür isimleri doğrudan kullanırken bulursanız, muhtemelen yanlış bir şeyler yapıyorsunuzdur.
+Daha yüksek düzeyde fonksiyonellik arayın.
 
 ### Tekli Özellikler
 
@@ -141,7 +152,9 @@ class Stock:
             raise TypeError('Expected int')
         self._shares = value
 ```
-Genellikle bir property ile özel isim kullanımı arasında bir karışıklık vardır. Bir property dahili olarak `_shares` gibi özel bir ad kullansa da, sınıfın geri kalanı (property değil) `shares` gibi bir ad kullanmaya devam edebilir.
+Genellikle bir property ile özel isim kullanımı arasında bir karışıklık vardır. 
+Bir property dahili olarak `_shares` gibi özel bir ad kullansa da, 
+sınıfın geri kalanı (property değil) `shares` gibi bir ad kullanmaya devam edebilir.
 
 Property'ler ayrıca hesaplanan veri nitelikleri için de kullanışlıdır.
 
@@ -169,7 +182,8 @@ Bu, aslında bir metod olduğu gerçeğini gizleyerek fazladan parantezleri kald
 ```
 ### Tek Tip Erişim
 
-Son örnek, bir nesneye nasıl daha düzgün bir arayüzün yerleştirileceğini gösterir. Bunu yapmazsanız, bir nesnenin kullanımı kafa karıştırıcı olabilir:
+Son örnek, bir nesneye nasıl daha düzgün bir arayüzün yerleştirileceğini gösterir. 
+Bunu yapmazsanız, bir nesnenin kullanımı kafa karıştırıcı olabilir:
 
 ```python
 >>> s = Stock('GOOG', 100, 490.1)
@@ -215,17 +229,22 @@ File "<stdin>", line 1, in ?
 AttributeError: 'Stock' object has no attribute 'prices'
 ```
 
-Bu, hataları önlese ve nesnelerin kullanımını kısıtlasa da, aslında performans için kullanılır ve Python'un belleği daha verimli kullanmasını sağlar.
+Bu, hataları önlese ve nesnelerin kullanımını kısıtlasa da, 
+aslında performans için kullanılır ve Python'un belleği daha verimli kullanmasını sağlar.
 
 ### Kapsülleme ile İlgili Son Yorumlar
 
-Nitelikler, property'ler, slot'lar vb. ile denize girmeyin. Bunlar belirli bir amaca hizmet eder ve bunları diğer Python kodunu okurken görebilirsiniz. Ancak, çoğu günlük kodlama için gerekli değildir.
+Nitelikler, property'ler, slot'lar vb. ile denize girmeyin.
+Bunlar belirli bir amaca hizmet eder ve bunları diğer Python kodunu okurken görebilirsiniz. 
+Ancak, çoğu günlük kodlama için gerekli değildir.
 
 ## Egzersizler
 
 ###  Egzersiz 5.6: Tekli Property
 
-Property'ler bir nesneye "hesaplanan nitelikler" eklemenin kullanışlı bir yoludur. `stock.py` de `Stock`" nesnesi oluşturdunuz. Nesnenizde, farklı veri türlerinin çıkarılma şekliyle ilgili küçük bir tutarsızlık olduğuna dikkat edin:
+Property'ler bir nesneye "hesaplanan nitelikler" eklemenin kullanışlı bir yoludur. 
+`stock.py` de `Stock`" nesnesi oluşturdunuz. Nesnenizde, farklı veri türlerinin 
+çıkarılma şekliyle ilgili küçük bir tutarsızlık olduğuna dikkat edin:
 
 ```python
 >>> from stock import Stock
@@ -240,7 +259,8 @@ Property'ler bir nesneye "hesaplanan nitelikler" eklemenin kullanışlı bir yol
 ```
 Özellikle, ekstra () 'i `cost` e nasıl eklemeniz gerektiğine dikkat edin çünkü bu bir yöntemdir.
 
-Bir mülke dönüştürürseniz, `cost()` üzerindeki ekstra () 'dan kurtulabilirsiniz. `Stock` sınıfınızı alın ve maliyet hesaplamasının şu şekilde çalışması için değiştirin:
+Bir mülke dönüştürürseniz, `cost()` üzerindeki ekstra () 'dan kurtulabilirsiniz. 
+`Stock` sınıfınızı alın ve maliyet hesaplamasının şu şekilde çalışması için değiştirin:
 
 ```python
 >>> ================================ RESTART ================================
@@ -257,11 +277,14 @@ Bir mülke dönüştürürseniz, `cost()` üzerindeki ekstra () 'dan kurtulabili
 ... fails ...
 >>>
 ```
-Bu değişikliği yapmak büyük olasılıkla önceki `pcost.py` programınızı bozacaktır. Geri dönüp `cost()` yönteminde `()` işaretinden kurtulmanız gerekebilir.
+Bu değişikliği yapmak büyük olasılıkla önceki `pcost.py` programınızı bozacaktır. 
+Geri dönüp `cost()` yönteminde `()` işaretinden kurtulmanız gerekebilir.
 
 ### Egzersiz 5.7: Property ve Setter
 
-`shares` niteliğini, değer özel bir nitelikte saklanacak ve her zaman bir tamsayı değerine ayarlanmasını sağlamak için bir çift property fonksiyonu kullanılacak şekilde değiştirin. İşte beklenen davranışın bir örneği:
+`shares` niteliğini, değer özel bir nitelikte saklanacak ve her zaman bir tamsayı 
+değerine ayarlanmasını sağlamak için bir çift property fonksiyonu kullanılacak şekilde değiştirin. 
+İşte beklenen davranışın bir örneği:
 
 ```python
 >>> ================================ RESTART ================================
