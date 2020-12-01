@@ -6,7 +6,7 @@ Bu bölümde yazılarla (text) çalışmayı ele alacağız.
 
 ### Değişmez Metni Temsil Etme
 
-String'ler tırnak işaretleri arasına yazılır.
+Diziler tırnak işaretleri arasına yazılır.
 
 ```python
 # tek tırnak
@@ -24,28 +24,28 @@ Aysel git başımdan seni seviyorum
 '''
 ```
 
-Normal stringler sadece bir satır olabilir.Üç tırnaklı stringler ,tırnaklar arası tüm yazıyı dahil eder.
+Normal stringler sadece bir satır olabilir. Üçlü tırnak işaretleri, tüm biçimlendirme dahil olmak üzere birden çok satırda yer alan tüm metni kapsar.
 
 Tek  (') veya çift  (") tırnak arasında herhangi bir fark yok.
- *Ancak ,hangisi ile stringe başladıysan onla bitirmen gerekir*.
+ *Ancak, diziye hangisi ile başlandıysa, onunla bitirilmesi gerekir*.
 
 ### String Kaçış Kodları
 
-Kaçış kodları karakterleri kontrol etmek ve klavyede kolay yapılamayan kontrol karekterlerini temsil eder.
+Kaçış kodları, karakterleri kontrol etmek ve klavyede kolay yapılamayan karekterleri temsil eder.
 İşte bazı yaygın kaçış kodları:
 
 ```
-'\n'      alt satıra geçme
-'\r'      aynı satır başına döner
+'\n'      Alt satıra geçme
+'\r'      Aynı satır başına döner
 '\t'      Tab boşluğu bırakır
-'\''      tek tırnak işaretini tırnak içinde kullanmak için
-'\"'      çift tırnak işaretini tırnak içinde kullanmak için
-'\\'      tırnak içinde \ kullanmak için
+'\''      Tek tırnak işaretini tırnak içinde kullanmak için
+'\"'      Çift tırnak işaretini tırnak içinde kullanmak için
+'\\'      Tırnak içinde \ kullanmak için
 ```
 
 ### String Gösterimi
 
-Stringin içindeki her karakteri Unicode "code-point" de bir tam sayı olarak depolanır.
+Stringin içindeki her karakter Unicode "code-point" de bir tam sayı olarak depolanır.
 
 Aşağıdaki gibi kaçış dizilerini kullanarak tam bir kod noktası(code-point) değeri belirtebilirsiniz:
 
@@ -56,13 +56,12 @@ c = '\U0001D122'    # c = '𝄢'
 d = '\N{FOR ALL}'   # d = '∀'
 ```
 
-The [Unicode Character Database](https://unicode.org/charts) is a reference for all
-available character codes.
+[Unicode Character Database](https://unicode.org/charts) mevcut tüm karakter kodları için referanstır.  
 
-### String İndexleme
+### Dizi İndeksleme
 
-String ler her karaktere erişmek için arrayler gibi çalışır Bir integerı index olarak kullanabilirsiniz.(0dan başlayarak)
-Negatif sayılar stringi sondan konumunu belirtir.
+String'ler her karaktere erişmek için arrayler gibi çalışır. Bir tam sayısı indeks olarak kullanabilirsiniz (0'dan başlayarak).
+Negatif indeksler dizenin sonuna göre konumu belirtir.
 
 ```python
 a = 'Hello world'
@@ -80,7 +79,7 @@ f = a[3:8]    # 'lo wo'
 g = a[-5:]    # 'world'
 ```
 
-Sondaki index karaktere dahil değildir bir öncekini verir.  Eksik indexlerde stringin başlagıcı veya sonunu varsayar.
+Sondaki index karaktere dahil değildir bir öncekini verir. Eksik indeksler dizinin başlagıcı veya sonunu varsayar.
 
 ### String işlemleri
 
@@ -106,9 +105,9 @@ rep = s * 5             # 'HelloHelloHelloHelloHello'
 
 ### String metotları
 
-Stringlerin ,çeşitli işlemler gerçekleştiren metotları vardır.
+Stringler'in, çeşitli işlemler gerçekleştiren metotları vardır.
 
-Örnek: boşluğu silme / trailing white space.
+Örnek: öndeki / sondaki beyaz boşluğu silme.
 
 ```python
 s = '  Hello '
@@ -123,7 +122,7 @@ l = s.lower()     # 'hello'
 u = s.upper()     # 'HELLO'
 ```
 
-Örnek: Yerine koyma.
+Örnek: Yer değiştirme.
 
 ```python
 s = 'Hello world'
@@ -132,32 +131,32 @@ t = s.replace('Hello' , 'Hallo')   # 'Hallo world'
 
 **Daha fazla string metodu:**
 
-Stringler verileri çokça işleyebilmek için birçok metoda sahiptir.
-İşte birkaç metod örnekleri:
+String'ler, metin(text) verilerini test etmek ve değiştirmek için çok çeşitli başka metodlara sahiptir.
+İşte birkaç metot örnekleri:
 
 ```python
 s.endswith(suffix)     # 'suffix' ile bitip bitmediğini kontrol eder
-s.find(t)              # stringdeki ilk 't' yi bulur
-s.index(t)             # stringdeki ilk 't' yi bulur indexi
-s.isalpha()            # karakter alfapedik mi kontrol eder
-s.isdigit()            # karekter numerik mi kontrol eder
-s.islower()            # karekter küçük harfli mi kontrol eder
-s.isupper()            # karekter büyük harfli mi kontrol eder
-s.join(slist)          # stringe liste ekler
-s.lower()              # küçük harfe dönüştürür
-s.replace(old,new)     # yerine yazı ekler
-s.rfind(t)             # sondan 't'arar stringde
-s.rindex(t)            # sondan't' arar stringde
-s.split([delim])       # stringi alt listelere böler
-s.startswith(prefix)   # string 'prefix' ile başlıyor mu kontrol eder
-s.strip()              # stringi boşluğua göre parçalar
-s.upper()              # büyük harfe dönüştürür
+s.find(t)              # String'deki ilk 't' yi bulur
+s.index(t)             # String'deki ilk 't'nin indeksini bulur
+s.isalpha()            # Karakterler alfabetik mi kontrol eder
+s.isdigit()            # Karekterler numerik mi kontrol eder
+s.islower()            # Karekterler küçük harf mi kontrol eder
+s.isupper()            # Karekterler büyük harf mi kontrol eder
+s.join(slist)          # String'e liste ekler
+s.lower()              # Tüm harfleri küçük harfe dönüştürür
+s.replace(old,new)     # Yazıyı değiştirir
+s.rfind(t)             # Sondan 't'arar
+s.rindex(t)            # sondan't' arar
+s.split([delim])       # String'i alt string'lere böler
+s.startswith(prefix)   # String 'prefix' ile başlıyor mu kontrol eder
+s.strip()              # Baştaki ve sondaki boşlukları siler
+s.upper()              # Tüm harfleri büyük harfe dönüştürür
 ```
 
 ### String Değişkenliği
 
-String ler değişmez veya sadece okunur(salt-okunur)dur.
-Bir kere yaratılır ve değiştirilemezler.
+String'ler değişmez veya sadece okunur(salt-okunur).
+Bir kere yaratılırlar ve değerleri değiştirilemez.
 
 ```python
 >>> s = 'Hello World'
@@ -168,11 +167,11 @@ TypeError: 'str' object does not support item assignment
 >>>
 ```
 
-**Tüm işlemler string verisi üzerinde işlem yapar ve her zaman yeni bir string oluşturur.**
+**String verilerini işleyen tüm işlemler ve metotlar her zaman yeni dizeler oluşturur.**
 
 ### String Dönüşümleri
 
- `str()` kullanarak herhangi bir değeri stringe dönüştürebilirsin. Stringin tutuğu sonuç
+ `str()` kullanarak herhangi bir değeri stringe dönüştürülebilir. Stringin tutuğu sonuç
 `print()` ifadesiyle üretilmiş olanla aynı olur .
 
 ```python
@@ -206,7 +205,7 @@ data.replace(b'Hello', b'Cruel')  # b'Cruel World\r\n'
 data[0]   # 72 (ASCII code for 'H')
 ```
 
-Stringlerden/stringe dönüştürme .
+String'lerden/string'e dönüştürme .
 
 ```python
 text = data.decode('utf-8') # bytes -> text
@@ -227,8 +226,8 @@ Ham stringler ,yorumlanmamış ters slaş(\) a sahip değişmez stringlerdir . �
 ```
 
 String, aynen yazıldığı gibi ,içinde yer alan değişmez metindir.
-Bu, ters eğik(\) çizginin özel olduğu durumlarda kullanışlıdır.
-Örneğin: dosya adları vb.
+Bu, ters eğik(\) çizginin önemli olduğu durumlarda kullanışlıdır.
+Örneğin: dosya adları, düzenli ifade (regex) vb.
 
 ### f-Strings
 
@@ -253,14 +252,14 @@ daha sonra bakacağız.
 ## Alıştırmalar
 
 Bu alıştırmada,Python operatörleri ve stirnglerele deneyim yaşayacağız. 
-Bunlaro Python ınteractive komut isteminde yapmalısınız,
-sonuçları kolayca görebilirsiniz.  Önemli not:
+Bunları Python interaktif komut isteminde yaparsanız
+sonuçları kolayca görebilirsiniz. Önemli not:
 
 > Bu alıştırmalarda interpreter ile etkileşime girmelisiniz,
-> `>>>` bu interpreter istemi Python sizden teni bir ifade istediğinde görünücek.Bazı egzersizlerde
-> birden fazla ifade girmeniz gerkebilir,birkaç kez
+> `>>>` bu interpreter istemi Python sizden yeni bir ifade istediğinde görünücek. Bazı egzersizlerde
+> birden fazla ifade girmeniz gerkebilir, birkaç kez
 > 'return' etmeniz gerekebilir . Sadece hatırlatma: örneklerde çalışırken *SAKIN* 
->  `>>>`  kullanmayınız.
+>  `>>>`  yazmayınız.
 
 String bir hisse senedi kısaltmalarını tutacak şekilde tanımlayalım:
 
@@ -271,7 +270,7 @@ String bir hisse senedi kısaltmalarını tutacak şekilde tanımlayalım:
 
 ### Alıştırma 1.13: Stringi alt dizelere ayırma
 
-Stringler karakterlerden oluşan arrayler gibidir. Karakterleri ayırmaya çalışalım:
+Stringler karakterlerden oluşan arrayler gibidir. Karakterleri çıkarmaya çalışalım:
 
 ```python
 >>> symbols[0]
@@ -280,16 +279,16 @@ Stringler karakterlerden oluşan arrayler gibidir. Karakterleri ayırmaya çalı
 ?
 >>> symbols[2]
 ?
->>> symbols[-1]        # Last character
+>>> symbols[-1]        # Son karakter
 ?
->>> symbols[-2]        # Negative indices are from end of string
+>>> symbols[-2]        # Sondan 2. karakter
 ?
 >>>
 ```
 
-Python da, stringler salt okunurdur(sadece okunur).
+Python da, stringler salt okunurdur (sadece okunur).
 
- `symbols` ilk karakterini küçük harf yapmayı deneyin ('a')  .
+`symbols` ilk karakterini küçük harf yapmayı deneyin ('a').
 
 ```python
 >>> symbols[0] = 'a'
@@ -302,11 +301,10 @@ TypeError: 'str' object does not support item assignment
 ### Alıştırma 1.14: String Birleştirme
 
 String verileri salt okunurdur ama her zaman farklı 
-yeni bir değişken olarak yaratılabilirler .
+yeni bir değişken olarak yaratılabilirler.
 
 
-Şu ifadeyi kullanarak yeni bir şeyler eklemeyi deneyelim  .Aşağıdaki ifade stringin sonuna "GOOG" 
-ekleyecektir :
+Try the following statement which concatenates a new symbol "GOOG" to the end of symbols:
 
 ```python
 >>> symbols = symbols + 'GOOG'
@@ -315,7 +313,7 @@ ekleyecektir :
 >>>
 ```
 
-Muups !! Bizim istediğimiz bu değildi. Bunu düzelterek `'AAPL,IBM,MSFT,YHOO,SCO,GOOG'` sonucunu almayı dene.
+Oops! Bizim istediğimiz bu değildi. Bunu düzelterek `'AAPL,IBM,MSFT,YHOO,SCO,GOOG'` sonucunu almayı dene.
 
 ```python
 >>> symbols = ?
@@ -324,7 +322,7 @@ Muups !! Bizim istediğimiz bu değildi. Bunu düzelterek `'AAPL,IBM,MSFT,YHOO,S
 >>>
 ```
 
-`'HPQ'` 'yi stringe baştan ekleyelim:
+`'HPQ'`'yi string'in başına ekleyelim:
 
 ```python
 >>> symbols = ?
@@ -333,14 +331,14 @@ Muups !! Bizim istediğimiz bu değildi. Bunu düzelterek `'AAPL,IBM,MSFT,YHOO,S
 >>>
 ```
 
-Bu örneklerde, orjinal string değiştirilmiş gibi görünebilir ,bu da salt-okunur  kuralını çalışmıyor gibi gösterebilir.
-Ama öyle değil. Her seferinde işlemler gerçekleşirken yeni bir stringe uygulanır.
-Siz yeniden aynı değişken adını kullandığınızde, tam bu noktada yeni bir string yaratırılır. 
-Buradan sonra eski string değişkeni kullanılmamak üzere yok edilir.
+Bu örneklerde, orjinal string değiştirilmiş gibi görünebilir ,bu da salt-okunur kuralını çalışmıyor gibi gösterebilir.
+Ama öyle değil. Her seferinde işlemler gerçekleşirken yeni bir stringe üretilir.
+Siz yeniden aynı değişken adını kullandığınızda, tam bu noktada yeni bir string yaratırılır. 
+Buradan sonra, eski string değişkeni kullanılmamak üzere yok edilir.
 
 ### Alıştırma 1.15: Üyelik Testi (dahillik)
 
-'in' operatörü gibi alt dizeleri kontrol eder. İnteraktif komut 
+'in' operatörü, alt dizeleri kontrol eder. İnteraktif komut 
 satırında şunları deneyelim:
 
 ```python
@@ -353,7 +351,7 @@ True
 >>>
 ```
 
-*Neden `'AA'` sorgusunda  `True` değerini döndü?*
+*Neden `'AA'` sorgusunda  `True` değeri döndü?*
 
 ###  Alıştırma 1.16: String Metotları
 
@@ -394,9 +392,9 @@ Daha fazla işlem deneyelim :
 
 ### Alıştırma 1.17: f-strings
 
-Baze bir string oluşturmak ve içine değeri gömmek isteyebilirsiniz.
+Bazen bir string oluşturmak ve içine değeri gömmek isteyebilirsiniz.
 
-f-string kullanırken şunları yapalım. Örneğin:
+Bunu yapmak için f-string kullanın. Örneğin:
 
 ```python
 >>> name = 'IBM'
@@ -413,8 +411,8 @@ f-string kullanırken şunları yapalım. Örneğin:
 
 ### Alıştırma 1.18: Düzenli İfadeler
 
-Temel strıng işlemlerinin bir sınırlaması ise,
-her türlü gelişmiş desen eşleştirmesini desteklememesidir  
+Temel dizin işlemlerinin bir sınırlaması ise,
+her türlü gelişmiş örüntü eşleştirmesini desteklememesidir.  
 Bunun için Python'un 're' modülüne ve düzenli ifadelerine dönmeniz gerekiyor.
 Düzenli ifade işleme büyük bir konudur, işte kısa bir örnek:
 
@@ -436,7 +434,7 @@ Düzenli ifade işleme büyük bir konudur, işte kısa bir örnek:
 
 ### Yorum
 
-Interpreter ile denemeye başladığınızda,farklı nesneler tarafından 
+Interpreter ile denemeye başladığınızda, farklı nesneler tarafından 
 desteklenen işlemler hakkında daha fazla bilgi edinin. Örneğin ,hangi işlem
 bir string için uygun ?
 
@@ -464,7 +462,7 @@ Eğer bu komut işinizde yaramadıysa `dir()` fonksiyonunu kullanabilirsiniz.
 >>>
 ```
 
-`dir()` fonksiyonu  '(.)' dan sonra kullanabileceğiniz tüm metotları gösterir .
+`dir()` fonksiyonu  '(.)'dan sonra kullanabileceğiniz tüm metotları gösterir .
 `help()` komutu daha spesifik bilgiler için kullanılabilir:
 
 ```python

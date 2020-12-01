@@ -4,13 +4,13 @@
 
 ### Sequence (Dizi) Veri Tipi
 
-Python'da  üç tane *sequence(dizi)* veri tipi vardır.
+Python'da  üç tane *sequence (dizi)* veri tipi vardır.
 
 * String: `'Hello'`. Stringler bir karakter dizisidir
 * List: `[1, 4, 5]`.
 * Tuple: `('GOOG', 100, 490.1)`.
 
-Tüm diziler sıraladırlar,integerlar ile indexlenmiş ve bir uzunluğa sahiplerdir.
+Tüm diziler sıraladırlar, integerlar ile indekslenmiş ve bir uzunluğa sahiplerdir.
 
 ```python
 a = 'Hello'               # String
@@ -55,10 +55,10 @@ Traceback (most recent call last):
 TypeError: can only concatenate tuple (not "list") to tuple
 ```
 
-### Slicing (dilimleme)
+### Slicing (Dilimleme)
 
 Slicing diziden bir alt dizi elde etme anlamına gelir.
-Syntax'ı(sözdizimi) [start:end]` şeklindedir. Nerden başladığı `start` ve nerde bittiği `end` indexleri ile belirlersiniz.
+Syntax'ı (sözdizimi) `[start:end]` şeklindedir. Nerden başladığı `start` ve nerde bittiği `end` indexleri ile belirlersiniz.
 
 ```python
 a = [0,1,2,3,4,5,6,7,8]
@@ -69,7 +69,7 @@ a[:3]     # [0,1,2]
 ```
 
 * `start` ve  `end` indexleri integer tipinde olmalıdır.
-* Slices(parçalar) son indexteki değeri içermezler  . Matematikteki yarı-açık aralık gibide düşünülebilir .
+* Slices(parçalar) son indexteki değeri içermezler. Matematikteki yarı-açık aralık gibide düşünülebilir.
 * Eğer indexler ihmal edilimiş ise varsayılan olarak listenin başına veya sonuna giderler.
 
 ### Slice(dilim)lerde yeniden atama
@@ -82,7 +82,7 @@ a = [0,1,2,3,4,5,6,7,8]
 a[2:4] = [10,11,12]       # [0,1,10,11,12,4,5,6,7,8]
 ```
 
-*Not: Yeniden atamaya yapılan slices(dilimler) eskisiyle aynı uzunluğa sahip olmazlar*
+*Not: Yeniden atamaya yapılan slices (dilimler) eskisiyle aynı uzunluğa sahip olmazlar.*
 
 ```python
 # Deletion
@@ -90,7 +90,7 @@ a = [0,1,2,3,4,5,6,7,8]
 del a[2:4]                # [0,1,4,5,6,7,8]
 ```
 
-### Sequence Reductions (Dizilerde indirgeme)
+### Sequence Reductions (Dizilerde İndirgeme)
 
 Dizileri tek bir değere indirgeme için bazı yaygın fonksiyonlar vardır .
 
@@ -125,7 +125,7 @@ for-loop (for döngüsü) ile dizilerin elemanları üzerinde dolaşabilirsiniz.
 ```
 
 Her döngüde çalışabileceğiniz yeni öğeler elde edersiniz.
-Bu yeni değer iterasyon değişkeninde( iteration variable) yer alır. Bu örnekte, 
+Bu yeni değer iterasyon değişkeninde (iteration variable) yer alır. Bu örnekte, 
 iterasyon değişkenimiz(iteration variable) `x` tir:
 
 ```python
@@ -133,7 +133,7 @@ for x in s:         # `x` is an iteration variable
     ...statements
 ```
 
-Her iterasyonda ,yeni değer öncekinin üzerine yazılır(eğer varsa).
+Her iterasyonda ,yeni değer öncekinin üzerine yazılır (eğer varsa).
 Döngü bittiğinde değişken son değerini almış olur.
 
 ### break ifadesi (kırma-durdurma)
@@ -150,7 +150,7 @@ statements
 ```
 
 `break` ifadesi yürütüldüğünde, döngüden çıkar ve bir sonraki ifadeyle devam edilir.
- `break` ifadesi sadece en içteki döngü için geçerlidir.Eğer döngü ile başka bir döngü çalışıyorsa,
+ `break` ifadesi sadece en içteki döngü için geçerlidir. Eğer döngü ile başka bir döngü çalışıyorsa,
 dışta olan döngü break ifadesiyle durdurulmayacaktır.
 
 ### continue ifadesi (devam etme-atlama)
@@ -165,11 +165,11 @@ for line in lines:
     ...
 ```
 
-Bu, mevcut elamana ihtiyaç duymuyorsanız veya mevcut işlemi görmezden gelmek istiyorsanız kullanmalısnız.
+Bu, mevcut elamana ihtiyaç duymuyorsanız veya mevcut işlemi görmezden gelmek istiyorsanız kullanmalısınız.
 
 ### İntegerlar üzerinde döngü
 
-Eğer saymak istiyorsanız  `range()` kullanın.
+Eğer saymak istiyorsanız `range()` kullanın.
 
 ```python
 for i in range(100):
@@ -188,10 +188,10 @@ for k in range(10,50,2):
     # Notice how it counts in steps of 2, not 1.
 ```
 
-* Son değer dahil değildir. Bu slice'lar(dilim) ile benzerdir.
+* Son değer dahil değildir. Bu slice'lar (dilim) ile benzerdir.
 * `start` (başlangıcı) opsiyoneldir. Varsayılanı `0` dır.
 * `step` (adım) opsiyoneldir. Varsayılanı `1` dir.
-* `range()` ihtiyaca göre hesaplar(üretir).Aslında büyük bir sayı deposu gibi değildir.
+* `range()` ihtiyaca göre hesaplar(üretir). Aslında büyük bir sayı deposu gibi değildir.
 
 ### enumerate() fonksiyonu
 
@@ -245,7 +245,7 @@ Değişken sayısı tuple içindeki öğe sayısıyle eşit olmalıdır.
 
 ### zip() fonksiyonu
 
-`zip` fonksiyonu birden fazla diziyi alır ve onları birleştiren iterator(yineleyici) yapar.
+`zip` fonksiyonu birden fazla diziyi alır ve onları birleştiren iterator (yineleyici) yapar.
 
 ```python
 columns = ['name', 'shares', 'price']
@@ -342,12 +342,12 @@ acemiler tarafından paslı bir C programının derinliklerinden
 Bunu yapmayın! Okurken sadece gözünüzü kanatmaz,
 bellek açısından verimsizdir ve çok daha yavaş çalışır. Sadece normal 
 bir `for` döngüsü kullanın , eğer verinin üzerinde 
-dolaşmak istiyorsanız.  `enumerate()` kullanın ,
+dolaşmak istiyorsanız. `enumerate()` kullanın,
 eğer herhangi bir nedenle indexlere ihtiyaç duyduysanız.
 
 ### Alıştırma 2.15: Pratik bir enumerate() örneği
 
-`Data/missing.csv` odsyasını tekrar çağırın(hisse senedi verilerini içeren portföy)
+`Data/missing.csv` odsyasını tekrar çağırın (hisse senedi verilerini içeren portföy)
 ancak eksik veri içeren bazı satırlar var.  `enumerate()` kullanın,
 `pcost.py` programınızı satır numarasını yazdıracak şekilde düzenleyin,
 böylece hatalı girdiyle karşılaştığında uyarı verecektir.
@@ -359,7 +359,7 @@ Row 7: Couldn't convert: ['IBM', '', '70.44']
 >>>
 ```
 
-Bunu yaparken, kodunuzdaki bazı parçaları değiştirmeni gerekiyor.
+Bunu yaparken, kodunuzdaki bazı parçaları değiştirmen gerekiyor.
 
 ```python
 ...
@@ -373,7 +373,7 @@ for rowno, row in enumerate(rows, start=1):
 ### Alıştırma 2.16:  zip() fonksiyonunu kullanmak
 
  `Data/portfolio.csv`dosyasında, ilk satır başlıkları içerir.
- Önceki tüm kodlarımızda onlardan kurtuluyorduk
+ Önceki tüm kodlarımızda onlardan kurtuluyorduk.
 
 ```python
 >>> f = open('Data/portfolio.csv')
@@ -397,9 +397,9 @@ fonksiyonu fotoğrafa dahil oluyor.  Önce dosya başlıklarını bir veri satı
 ```
 
 Uyarı : `zip()` sütun başlıklarını sütun değerleriyle eşleştirdi.
-`list()` kullandık ve sonucu listeye çevirdik. Normal olarak, `zip()` bir iterator oluşturur ,
-bu olmalı for-döngüsü bunu kullanır. 
-Bu eşleştirme bir sözlük oluşturmak için bir ara adımdır .
+`list()` kullandık ve sonucu listeye çevirdik. Normal olarak, `zip()` bir iterator oluşturur.
+Bu olmalı, for-döngüsü bunu kullanır. 
+Bu eşleştirme bir sözlük oluşturmak için bir ara adımdır.
 Şimdi şunu deneyelim:
 
 ```python
@@ -412,9 +412,9 @@ Bu eşleştirme bir sözlük oluşturmak için bir ara adımdır .
 Bu dönüşüm, bilinmesi gereken en yararlı püf noktalarından biridir,
 çok fazla veri dosyası işlerken. Örneğin,`pcost.py` programının çeşitli girdi dosyalarıyla
 çalışmasını sağlamak istediğinizi varsayalım ama paylaştığı gerçek sütun numarasına bakılmaksızın,
-adı ,hisse ve fiyatı görünür.
+adı, hisse ve fiyatı görünür.
 
-`pcost.py`dosyasındaki `portfolio_cost()` fonksiyonunu düzenleyelim :
+`pcost.py`dosyasındaki `portfolio_cost()` fonksiyonunu düzenleyelim:
 
 ```python
 # pcost.py
@@ -456,7 +456,7 @@ name,date,time,shares,price
 Doğru yaptıysanız, veri dosyası öncekinden tamamen farklı bir sütun biçimine
 sahip olsa bile programınızın hala çalıştığını göreceksiniz. Çok havalı!
 
-Burada yapılan değişiklik küçük, ama önemli.  Tek bir sabit dosya biçimini okumak için kodlanmış 
+Burada yapılan değişiklik küçük, ama önemli. Tek bir sabit dosya biçimini okumak için kodlanmış 
 'portfolio_cost()' yerine yeni sürüm herhangi bir CSV dosyasını okur ve bunlar dışındaki
 ilgilenilen değerleri seçer. Dosya gerekli sütunlara sahip olduğu sürece kod çalışacaktır.
 
@@ -466,7 +466,7 @@ Bölüm 2.3'te yazdığınız 'report.py' programını, sütun başlıklarını 
 
 ### Alıştırma 2.17: Sözlüğü ters çevirmek
 
-Bir sözlük anahtarları (keys) değerlerle(value) eşleştirir .Örneğin, hisse senedi fiyatları sözlüğü.
+Bir sözlük anahtarları (keys) değerlerle (value) eşleştirir. Örneğin, hisse senedi fiyatları sözlüğü.
 
 ```python
 >>> prices = {
@@ -496,7 +496,7 @@ Ancak, bunun yerine (değer, anahtar) listelerini almak isteseydiniz?
 >>>
 ```
 
-Neden bunu yaptık? İlk olarak zip(),sözlük verileri üzerinde belirli 
+Neden bunu yaptık? İlk olarak zip(), sözlük verileri üzerinde belirli 
 türden veri işlemlerini gerçekleştirmenize izin verir.
 
 ```python

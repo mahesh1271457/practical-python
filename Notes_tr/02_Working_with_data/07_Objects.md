@@ -2,7 +2,7 @@
 
 # 2.7 Objeler
 
-Bu bölümde pythondaki iç? obje modelinden (internal object model) bahsedeceğiz. Aynı zamanda hafıza yönetimi, kopyalama ve tip kontrolü (type checking) hakkında konuşacağız.
+Bu bölümde pythondaki iç obje modelinden (internal object model) bahsedeceğiz. Aynı zamanda hafıza yönetimi, kopyalama ve tip kontrolü (type checking) hakkında konuşacağız.
 
 ### Değer atama işlemi
 
@@ -29,7 +29,7 @@ b = a
 c = [a,b]
 ```
 
-Altta gerçekleşen hafıza (RAM) operasyonları. Bu örnekte sadece bir adet liste objesi ( ‘[1, 2, 3]’ ) var. Ancak bu objeye 4 farklı referans var.
+Altta gerçekleşen hafıza (RAM) operasyonları. Bu örnekte sadece bir adet liste objesi ( `[1, 2, 3]` ) var. Ancak bu objeye 4 farklı referans var.
 
 
 ![References](references.png)
@@ -134,7 +134,7 @@ True
 >>>
 ```
 
-Örneğin a listesinin içindeki ‘[100, 101, 102]’ listesi ortak kullanılıyor. Buna *sığ kopya* deniyor. Bir resimle gösterelim:
+Örneğin a listesinin içindeki `[100, 101, 102]` listesi ortak kullanılıyor. Buna *sığ kopya* deniyor. Bir resimle gösterelim:
 
 ![Shallow copy](shallow.png)
 
@@ -173,7 +173,7 @@ Değişken adlarının bir *tipi (type)* yoktur. Sadece bir isimden ibaretler. A
 ```
 
 
-‘type()’, girdiğiniz değerin hangi tipte olduğunu söyler. Çoğunlukla fonksiyon olarak kullanılır.
+`type()`, girdiğiniz değerin hangi tipte olduğunu söyler. Çoğunlukla fonksiyon olarak kullanılır.
 
 
 ### Tip kontrolü
@@ -218,7 +218,7 @@ Failed!
 ```
 
 
-Yukarıdaki örnekte gördüğümüz ‘items’, içinde bir fonksiyon, modül ve hata göstergesi(exception) barındıran bir liste. Bunların isimlerini yazarak kullanmak yerine direkt listeden kullanabilirsiniz: 
+Yukarıdaki örnekte gördüğümüz `items`, içinde bir fonksiyon, modül ve hata göstergesi (exception) barındıran bir liste. Bunların isimlerini yazarak kullanmak yerine direkt listeden kullanabilirsiniz: 
 
 ```python
 items[0](-45)       # abs
@@ -263,7 +263,7 @@ Değerleri istediğimiz tiplere dönüştüren fonksiyonları sırayla bulundura
 >>>
 ```
 
-Böyle bir listeyi oluşturabiliyor olmamızın sebebi biraz önce de bahsettiğim gibi pythonda tüm objelerin *birinci sınıf* olması. Yani fonksiyonlardan oluşan bir liste mi yapmak istiyoruz, yapabiliriz. ‘types’ listesinde de bunu yaptık. Listedeki elemanların her biri ‘x’ değerini belirli bir tipe dönüştüren fonksiyonlar. (‘str(x)’, ‘int(x)’, ‘float(x)’ gibi.)
+Böyle bir listeyi oluşturabiliyor olmamızın sebebi biraz önce de bahsettiğim gibi pythonda tüm objelerin *birinci sınıf* olması. Yani fonksiyonlardan oluşan bir liste mi yapmak istiyoruz, yapabiliriz. ‘types’ listesinde de bunu yaptık. Listedeki elemanların her biri `x` değerini belirli bir tipe dönüştüren fonksiyonlar. (`str(x)`, `int(x)`, `float(x)` gibi.)
 
 
 Şimdi dosyadan bir satır okuyalım.
@@ -292,7 +292,7 @@ TypeError: can't multiply sequence by non-int of type 'str'
 
 Program bize iki karakter dizisini çarpamayacağını söyledi.
 
-Ama önceden oluşturduğumuz `types` listesindeki fonksiyonlarla ‘row’ listesindeki değerleri eşlersek hesap yapabiliriz. Örneğin:
+Ama önceden oluşturduğumuz `types` listesindeki fonksiyonlarla `row` listesindeki değerleri eşlersek hesap yapabiliriz. Örneğin:
 
 ```python
 >>> types[1]
@@ -326,7 +326,7 @@ Dönüştürdüğümüz değerlerle hesap yapmayı deneyelim:
 >>>
 ```
 
-‘types’ listesindeki fonksiyonlarla ‘row’ listesindeki değerleri birleştirelim (zip):
+`types` listesindeki fonksiyonlarla `row` listesindeki değerleri birleştirelim (zip):
 
 ```python
 >>> r = list(zip(types, row))
@@ -336,9 +336,9 @@ Dönüştürdüğümüz değerlerle hesap yapmayı deneyelim:
 ```
 
 
-Her bir tip dönüştürme fonksiyonu, bir değerle eşlendi. Örneğin ‘int()’ fonksiyonu `'100'` değeriyle eşlendi.
+Her bir tip dönüştürme fonksiyonu, bir değerle eşlendi. Örneğin `int()` fonksiyonu `'100'` değeriyle eşlendi.
 
-Birleştirmiş ( ziplenmiş ) liste, art arda bütün değerlerin tiplerini değiştirmek istiyorsak kullanışlı olur.
+Birleştirmiş (ziplenmiş) liste, art arda bütün değerlerin tiplerini değiştirmek istiyorsak kullanışlı olur.
 
 ```python
 >>> converted = []
@@ -352,9 +352,9 @@ Birleştirmiş ( ziplenmiş ) liste, art arda bütün değerlerin tiplerini değ
 >>>
 ```
 
-Yukarıdaki kodda ne olduğunu, neyi neden yaptığımızı iyice anladığınızdan emin olun. Döngüde ‘func’ adlı değişken, ‘types’ listesindeki tip dönüştürme fonksiyonlarından biri (int, str, float). ‘val’ değişkeni ise ‘row’ listesindeki elemanlardan biri (‘AA’, ‘100’ gibi). 
+Yukarıdaki kodda ne olduğunu, neyi neden yaptığımızı iyice anladığınızdan emin olun. Döngüde `func` adlı değişken, `types` listesindeki tip dönüştürme fonksiyonlarından biri (int, str, float). `val` değişkeni ise `row` listesindeki elemanlardan biri (`AA`, `100` gibi). 
 
-func(val) ifadesi de sırayla ‘types’ listesindeki fonksiyonları ‘row’ listesindeki değerlere uyguluyor.
+func(val) ifadesi de sırayla `types` listesindeki fonksiyonları `row` listesindeki değerlere uyguluyor.
 
 Yukarıda uzun uzun yazdığımız kodun yaptığı işlemi tek satırlık liste işleviyle de yapabiliriz.
 
@@ -368,7 +368,7 @@ Yukarıda uzun uzun yazdığımız kodun yaptığı işlemi tek satırlık liste
 
 
 ### Alıştırma 2.25
-Elinizde bir dizi ‘anahtar:değer’ çiftleriniz varsa ‘dict()’ fonksiyonunu kullanarak kolayca sözlük oluşturabileceğinizi hatırlıyorsunuz değil mi?
+Elinizde bir dizi `anahtar:değer` çiftleriniz varsa `dict()` fonksiyonunu kullanarak kolayca sözlük oluşturabileceğinizi hatırlıyorsunuz değil mi?
 Şimdi bunu kullanarak sütünların başlıklarından bir sözlük oluşturalım:
 
 ```python
@@ -395,7 +395,7 @@ Sözlük işlevi kabiliyetleriniz yeterince güçlendiyse sözlük işlevi de ku
 
 Bu bölümde öğrendiğiniz yöntemlerle sütunlardan oluşan çoğu veri dosyasındaki verileri kolayca bir python sözlüğüne dönüştürebilirsiniz.
 
-Örneğin aşağıdaki gibi farklı bir dosyadan veri okuyacaksınız
+Örneğin aşağıdaki gibi farklı bir dosyadan veri okuyacaksınız:
 
 ```python
 >>> f = open('Data/dowstocks.csv')
@@ -427,7 +427,7 @@ Biraz önce kullandığımız yöntemi yeniden kullanarak veri tiplerini istedi�
 ```
 
 
-Bonus soru: Yukarıdaki örnekteki ‘date’ sütunundaki verileri (6, 11, 2007) gibi bir demete nasıl dönüştürürdünüz?
+Bonus soru: Yukarıdaki örnekteki `date` sütunundaki verileri (6, 11, 2007) gibi bir demete nasıl dönüştürürdünüz?
 
 Bu bonus soruyla biraz vakit harcayıp bu bölümde öğrendiklerinizi pekiştirin. İleriki bölümlerde bu fikirlere yeniden döneceğiz.
 

@@ -133,7 +133,7 @@ def foo():
 ```
 
 Değişken atamaları, fonksiyon tanımlarının dışında ve içinde gerçekleşir. Dışarıda tanımlanan
-değişkenler "global" dir. Bir fonksiyonun içindeki değişkenler "yerel" dir.
+değişkenler evrensel (global) dir. Bir fonksiyonun içindeki değişkenler "yerel" dir.
 
 ### Yerel Değişkenler
 
@@ -190,7 +190,7 @@ print(name) # 'Dave' print ediyor
 
 ### Global Değişkenleri Değiştirme
 
-Global bir değişkeni değiştirmeniz gerekiyorsa, onu böyle değiştirmelisiniz.
+Global bir değişkeni değiştirmeniz gerekiyorsa, onu böyle değiştirmelisiniz:
 
 ```python
 name = 'Dave'
@@ -268,7 +268,7 @@ ve daha genel bir amaç yapmak istersiniz. Hedefimiz bu.
 
 ### Egzersiz 3.3: CSV Dosyalarını Okuma
 
-Başlangıç ​​olarak, bir CSV dosyasını bir dictionary listesine okuma sorununa odaklanalım. 
+Başlangıç olarak, bir CSV dosyasını bir dictionary listesine okuma sorununa odaklanalım. 
 `fileparse.py` dosyasında, şuna benzer bir fonksiyon tanımlayın:
 
 

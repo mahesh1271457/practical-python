@@ -90,7 +90,7 @@ Bu alıştırmaları  `Data/portfolio.csv` dosyasıyla yapacağız. Bu dosya,
 hisse senedi portföyü hakkında bilgi içeren satırların bir listesini içerir.
 `practical-python/Work/` bu dizinde çalıştığınız varsayılmaktadır.
 Eğer emin değil iseniz, aşağıdaki kod bloğunu çalıştırarak 
-hangi dizinde olduğunuzu bulabilirsiniz :
+hangi dizinde olduğunuzu bulabilirsiniz:
 
 ```python
 >>> import os
@@ -101,7 +101,7 @@ hangi dizinde olduğunuzu bulabilirsiniz :
 
 ### Alıştırma 1.26: Dosya Ön Hazırlıkları
 
-Öncelikle tüm dosyayı büyük bir string olarak okuyalım :
+Öncelikle tüm dosyayı büyük bir string olarak okuyalım:
 
 ```python
 >>> with open('Data/portfolio.csv', 'rt') as f:
@@ -130,7 +130,7 @@ Bir dosyanın hepsini tek seferde okumak basit olsa da genellikle bunu yapmanın
 yolu değildir , özellikle de dosya çok büyük veya tek seferde işlem yapmak 
 istediğiniz satırları içerdiği zaman.
 
-Bir dosyayı satır-satır okumak için aşağıdaki şekilde for-loop (for döngüsü) kullanırız:
+Bir dosyayı satır-satır okumak için aşağıdaki örnekteki gibi for-loop (for döngüsü) kullanırız:
 
 ```python
 >>> with open('Data/portfolio.csv', 'rt') as f:
@@ -147,8 +147,8 @@ name,shares,price
 Bu kodu kullandığınızda ,satırlar dosyanın sonuna kadar okunur ve
 bu noktada da döngü durur.
 
-Belirli durumlarda,bir satırı atlamak veya sadece belirli bir satırı okumak isteyebilirsiniz
-(Örneğin sütunların başlıklarının olduğu satırı atlamak isteyebilirsiniz.)
+Belirli durumlarda, bir satırı atlamak veya sadece belirli bir satırı okumak isteyebilirsiniz
+(Örneğin sütunların başlıklarının olduğu satırı atlamak isteyebilirsiniz.).
 
 ```python
 >>> f = open('Data/portfolio.csv', 'rt')
@@ -166,7 +166,7 @@ Belirli durumlarda,bir satırı atlamak veya sadece belirli bir satırı okumak 
 ```
 
 `next()` dosyada bulunan bir sonraki satırdaki yazıyı döner. Tekrar tekrar kullanırsak ardışık satırları elde ederdik.
-Ancak bildiğiniz gibi for döngüsü verilerinizi elde etmek için next() kullanır.
+Ancak bildiğiniz gibi for döngüsü verilerinizi elde etmek için `next()` kullanır.
 Bu nedenle, tek bir satırı açıkça atlamaya veya okumaya çalışmadığınız sürece normalde onu doğrudan kullanmazsınız.
 
 Bir dosyanın satırlarını okuduktan sonra ayırma gibi daha fazla işlemleri uygulamaya başlayabilirsiniz.
@@ -194,8 +194,8 @@ Bir dosyanın satırlarını okuduktan sonra ayırma gibi daha fazla işlemleri 
 Artık bir dosyanın nasıl okunacağını bildiğinize göre, basit bir hesaplama yapmak için bir program yazalım.
 
 `portfolio.csv` dosyasındaki sütunlar hisse senedi isimlerini, payların sayısına,
-ve tek bir hisse senedinin fiyatını tutar. `pcost.py` adında bir program yazalım,bu dosyayı açsın
-, tüm satırları okusun ve portföydeki tüm payların ne kadar tutacağını hesaplasın.
+ve tek bir hisse senedinin fiyatını tutar. `pcost.py` adında bir program yazalım, bu dosyayı açsın,
+tüm satırları okusun ve portföydeki tüm payların ne kadar tutacağını hesaplasın.
 
 *İpucu: string bir ifadeyi integer a çevirmek için `int(s)` kullanın. stringi bir ifadeyi float a çevirmek için `float(s)`.*
 
@@ -209,7 +209,7 @@ Toplam maliyet 44671.15
 
 Ya text dosyası yerine gzip gibi sıkıştırılmış bir veri dosyası okumak isteseydik?
 `open()` fonksiyonu bu sefer sana yardımcı olamazdı, ama
-Python `gzip` adında bir kütüphane ,sıkıştırlımış gzip dosyalarını okumana 
+Python `gzip` adında bir kütüphane, sıkıştırlımış gzip dosyalarını okumana 
 yardımıcı olur.
 
 Şunu deneyelim:
@@ -236,7 +236,7 @@ Ancak ,bu Pandas öğrenmek için bir kurs değil. Dosyaları okumak,
 CSV dosyalarından daha genel bir problemdir.
 Bir CSV dosyasıyla çalışmamızın ana nedeni, çoğu kodlayıcı için bilindik bir format
 olması ve doğrudan Python özellikleriyle çalışmanın kolay olmasıdır.
-Sonuç olarak işinizde elbette Pandas kullanın.Bu kursun geri kalanı için biz standart
+Sonuç olarak işinizde elbette Pandas kullanın. Bu kursun geri kalanı için biz standart
 Python işlevselliğine sadık kalacağız.
 
 [Contents](../Contents.md) \| [Previous (1.5 Lists)](05_Lists.md) \| [Next (1.7 Functions)](07_Functions.md)

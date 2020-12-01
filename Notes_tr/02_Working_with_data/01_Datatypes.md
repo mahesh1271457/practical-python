@@ -2,7 +2,7 @@
 
 # 2.1 Veri Tipleri ve Veri Yapıları
 
-Bu bölümde veri yapılarından tuple'lar(demetler) ve sözlüklerden bahsedeceğiz.
+Bu bölümde veri yapılarından tuple'lar(demetler) ve dictionaries(sözlüklerden) bahsedeceğiz.
 
 ### İlkel Veri Türleri
 
@@ -58,7 +58,7 @@ Bazen `()` ifadesi syntax(söz dizimi)de atlanır.
 s = 'GOOG', 100, 490.1
 ```
 
-Özel Durumlar (0-tuple, 1-tuple).
+Özel durumlar (0-tuple, 1-tuple).
 
 ```python
 t = ()            # boş tuple
@@ -68,7 +68,7 @@ w = ('GOOG', )    # 1 elemanlı tuple
 Tuple genellikle  *basit* kayıtları veya yapıları temsil etmek için kullanılır .
 Tipik olarak, bir *object* (obje)nin birden çok parçasını tutar. İyi bir benzetme: *Tuplelar veri tablosundaki tek bir satır gibidir*
 
-Tuple içerikleri düzen içindedir.(arrayler gibi).
+Tuple içerikleri düzen içindedir (arrayler gibi).
 
 ```python
 s = ('GOOG', 100, 490.1)
@@ -92,24 +92,24 @@ s = (s[0], 75, s[2])
 
 ### Tuple  Paketleme
 
-Tuplelar ilgili öğeleri tek bir *varlık* ta birarada paketlemekle ilgilidir.
+Tuplelar ilgili öğeleri tek bir *varlıkta* birarada paketlemekle ilgilidir.
 
 ```python
 s = ('GOOG', 100, 490.1)
 ```
 
-Tuplelarda programın diğer bölümlerine tek bir nesne olarak ulaşmak kolaydır .
+Tuplelarda programın diğer bölümlerine tek bir nesne olarak ulaşmak kolaydır.
 
 ### Tuple Paketi Açma (Unpacking)
 
-Tuplelar heryerde kullanılabilir, parçalarını değişkenlere ayırabilirsiniz.
+Tuplelar her yerde kullanılabilir, parçalarını değişkenlere ayırabilirsiniz.
 
 ```python
 name, shares, price = s
 print('Cost', shares * price)
 ```
 
-Atayacağınız değişkenlerin sayısı,tuple'daki yapıların sayısıyla eşit olmalıdır.
+Atayacağınız değişkenlerin sayısı, tuple'daki yapıların sayısıyla eşit olmalıdır.
 
 ```python
 name, shares = s     # ERROR
@@ -120,7 +120,7 @@ ValueError: too many values to unpack
 
 ### Tuple vs. Liste
 
-Tuplelar salt-okunur bir liste gibi görünebilir. Ancak, tuple'lar *tek bir öğenin* farklı parçaları için kullanılır.  
+Tuple'lar salt-okunur bir liste gibi görünebilir. Ancak, tuple'lar *tek bir öğenin* farklı parçaları için kullanılır.  
 Listeler genellikle farklı öğelerden oluşan bir koleksiyondur (genellikle aynı tipli).
 
 ```python
@@ -131,8 +131,8 @@ symbols = [ 'GOOG', 'AAPL', 'IBM' ]  # A List representing three stock symbols
 
 ### Dictionaries (Sözlükler)
 
-Sözlükler anahtar ve ona ait değerlerden oluşur.  Bazen, karma tablo (hash table) veya
-ilişkilendirlebilir dizi  olarakta anılırlar(associative array). Anahtarlar indexler gibi değere erişmek için kullanılır.
+Sözlükler anahtar ve ona ait değerlerden oluşur. Bazen, karma tablo (hash table) veya
+ilişkilendirlebilir, dizi olarak da anılırlar(associative array). Anahtarlar, indeksler gibi değere erişmek için kullanılır.
 
 ```python
 s = {
@@ -171,7 +171,7 @@ Değeri silmek için `del` ifadesi kullanılır.
 
 ### Neden Sözlükler?
 
-Sözlükler *birçok* farklı değer ve bu değerler değiştirilebilir olması gerektiğinde kullanışlıdır .
+Sözlükler *birçok* farklı değer ve bu değerler değiştirilebilir olması gerektiğinde kullanışlıdır.
 Sözlükler kodunuzu daha okunabilir kılar.
 
 ```python
@@ -235,7 +235,7 @@ Bunu kullanarak, hisse miktarı ve fiyatını kullanarak toplam maliyeti hesapla
 >>>
 ```
 
-Python' da matematik hatalı mı? Neden cevap böyle birşey çıktı
+Python'da matematik hatalı mı? Neden cevap böyle birşey çıktı
 3220.0000000000005?
 
 Bu ,bilgisayarınnızdaki kayan nokta(float) donanımının bir sonucudur, 
@@ -274,7 +274,7 @@ elde ederken içeriğini değiştireblirsiniz.
 ```
 
 Mevcut bir değişkenin adını bunun gibi yeniden atadığınızda, eski
-değer ortadan kalkar.  Yukarıdaki örnekte size tuple'ın içeriğini değiştirdik gibi görünsede
+değer ortadan kalkar. Yukarıdaki örnekte size tuple'ın içeriğini değiştirdik gibi görünse de
 aslında yeni bir tuple oluşturarak eskisini yok ediyoruz.
 Tuplelar genellikle değişkenler paket halinde tutmak için kullanılır. Şunu deneyelim:
 
@@ -346,7 +346,7 @@ Biraz değişiklik ekleyin:
 ### Alıştırma 2.3: Bazı sözlük işlemleri
 
 
-Eğer sözlüğü bir tuple a dönüştürüseniz,tüm anahtar(key)leri elde edersiniz:
+Eğer sözlüğü bir tuple a dönüştürüseniz, tüm anahtar(key)leri elde edersiniz:
 
 ```python
 >>> list(d)
@@ -393,7 +393,7 @@ dict_keys(['name', 'shares', 'price', 'date', 'account'])
 
 `keys()` biraz alışılmadık ifadedir, `dict_keys` öğelerini döndürürken.
 
-Bu her zaman geçerli ,anahtar veya değeri değişse bile .
+Bu her zaman geçerli, anahtar veya değeri değişse bile .
 Örneğin şunu deneyelim:
 
 ```python
@@ -403,10 +403,10 @@ dict_keys(['name', 'shares', 'price', 'date'])
 >>>
 ```
 
-Dikkat edin `'account'`  ,`keys`(anahtar) kısmından kaybolur 
+Dikkat edin `'account'`  ,`keys`(anahtar) kısmından kaybolur, 
 eğer `d.keys()` i tekrar çağırmadıysanız.
 
-Anahtar ve değerleriyle çalışmanın daha zarif bir yolu ,
+Anahtar ve değerleriyle çalışmanın daha zarif bir yolu,
 `items()` metodudur. Bu size `(key, value)` tuple'nı verir:
 
 ```python

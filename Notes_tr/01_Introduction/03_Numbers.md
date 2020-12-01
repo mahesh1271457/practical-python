@@ -48,13 +48,13 @@ e = 0b10001111  # Binary
 Yaygın işlemler:
 
 ```
-x + y      ekleme
-x - y      çıkarma
-x * y      çarpma
-x / y      bölme (float üretir)
-x // y     tam değer bölme (integer üretir)
-x % y      modül (kalanı verir)
-x ** y     üs
+x + y      Ekleme
+x - y      Çıkarma
+x * y      Çarpma
+x / y      Bölme (float üretir)
+x // y     Tam değer bölme (integer üretir)
+x % y      Modül (kalanı verir)
+x ** y     Üs
 x << n     Bit kadar sola kaydır
 x >> n     Bit kadar sağa kaydır
 x & y      Bit-wise AND (bitdüzeyinde AND)
@@ -91,7 +91,7 @@ False
 >>>
 ```
 
-** Bu Python'nın bir hatası değil ** , ama CPU daki 'kayan nokta' donanımıyla alakalı.
+**Bu Python'nın bir hatası değil** , ama CPU daki 'kayan nokta' donanımıyla alakalı.
 
 Yaygın İşlemler:
 
@@ -121,29 +121,29 @@ e = math.log(x)
 
 ### 	Karşılaştırmalar
 
-Aşağıdaki karşılaştırmalar/ilişkisel operatörler sayılarla çalışır:
+Aşağıdaki karşılaştırmalar / ilişkisel operatörler sayılarla çalışır:
 
 ```
-x < y      daha az
-x <= y     daha az veya eşit
-x > y      daha fazla
-x >= y     daha fazla veya eşit
-x == y     eşittir
-x != y     eşit değildir
+x < y      Küçüktür
+x <= y     Küçük veya eşittir
+x > y      Büyüktür
+x >= y     Büyük veya eşittir
+x == y     Eşittir
+x != y     Eşit değildir
 ```
 
 Aşağıdakileri kullanarak daha karmaşık mantıksal ifadeler oluşturabilirsiniz :
 
 `and`, `or`, `not`
 
-İşte bir miktar örnek:
+İşte birkaç örnek:
 
 ```python
 if b >= a and b <= c:
     print('b ,c ile a arasında')
 
 if not (b < a or b > c):
-    print('b hala  a ve c arasında')
+    print('b hala a ve c arasında')
 ```
 
 ### Sayı Dönüşümleri
@@ -151,8 +151,8 @@ if not (b < a or b > c):
 Değerlerin tiplerini değiştirmek için kullanılır:
 
 ```python
-a = int(x)    # x'i integer a çevirir
-b = float(x)  # x'i float a çevirir
+a = int(x)    # x'i integer'a çevirir
+b = float(x)  # x'i float'a çevirir
 ```
 
 Deneyelim.
@@ -161,7 +161,7 @@ Deneyelim.
 >>> a = 3.14159
 >>> int(a)
 3
->>> b = '3.14159' # bu string'leri sayılara çevirirken de kullanılabilir
+>>> b = '3.14159' # Bu, dizileri sayılara çevirirken de kullanılabilir
 >>> float(b)
 3.14159
 >>>
@@ -175,7 +175,7 @@ dosyasına bakın.
 ### Alıştırma 1.7: Dave'in İpoteği
 
 Dave, 30 yıllık sabit faizle $500,000 parayı
-Guido’nun ipotek , Hisse yatırım ve Bitcoin şirketinden alır. 
+Guido’nun ipotek , Hisse yatırım ve Bitcoin ticaret şirketinden alır. 
 Faiz oranı 5% ve aylık ödemesi $2684.11.
 
 İşte Dave'in toplam ödeyeceği tutarı hesaplayan program:
@@ -199,9 +199,9 @@ Programı çalıştırdığınız zaman alacağınız cevap `966,279.6` olacakt�
 
 ### Alıştırma 1.8: Ektra Ödemeler
 
-Dave'in ipoteğin ilk 12 ayı için fazladan 1000 $ / ay ödediğini varsayalım?
+Dave'in ipoteğin ilk 12 ayı için fazladan 1000$/ay ödediğini varsayalım?
 
-Programı bu ekstra ödemeleri içerecek şekilde yeniden düzenleyelim ve ödenen toplam tutarı ,gerekli ay ile birlikte yazdırmasını sağlayalım
+Programı bu ekstra ödemeleri içerecek şekilde yeniden düzenleyelin ve ödenen toplam tutarı, gerekli ay ile birlikte yazdırmasını sağlayalım.
 
 Bu yeni programı çalıştırdığınızda cevap olarak `929,965.62` ve 342 months (ay) olarak alacaksınız.
 
@@ -222,9 +222,9 @@ Dave eğer 5. yıldan başlayarak 4 yıl boyunca ektra $1000/aylık öderse ipot
 
 ### Alıştırma 1.10: Tablo Yapalım
 
-Programı ; ayı, şimdiye kadar ödenen tutarı ve kalan ödemeyi gösterecek şekilde düzenleyelim.
+Programı; ayı, şimdiye kadar ödenen tutarı ve kalan ödemeyi gösterecek şekilde düzenleyelim.
 
-Çıktımız şuna benzer bişey olacaktır:
+Çıktımız şuna benzer bir şey olacaktır:
 
 ```bash
 1 2684.11 499399.22
@@ -256,7 +256,7 @@ Hazır siz burdayken, geçen ay meydana gelen fazla ödemeyi önlemek için prog
 >>>
 ```
 
-Bunu aklınıda tutarak ,aşağıdakini açıklayabilir misiniz?
+Bunu aklınızda tutarak , bunu açıklayabilir misiniz?
 
 ```python
 >>> bool("False")

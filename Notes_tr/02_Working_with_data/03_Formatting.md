@@ -2,8 +2,8 @@
 
 # 2.3 Formatting(Biçimlendirme)
 
-Burası küçük bir konudur . Verilerle çalıştığınızda genellikle 
-yapılandırılmış çıktı üretmek istersiniz (tablo, vb.). Örneğin:
+Burası hafif bir konudur. Verilerle çalıştığınızda genellikle 
+yapılandırılmış çıktı üretmek istersiniz (tablo vb.). Örneğin:
 
 ```code
       Name      Shares        Price
@@ -19,7 +19,7 @@ yapılandırılmış çıktı üretmek istersiniz (tablo, vb.). Örneğin:
 
 ### String Biçimlendirme
 
-String biçimlendirme için bir yol ise  ,Python 3.6+ için `f-strings` ifadesidir.
+String biçimlendirme için bir yol ise , Python 3.6+ için `f-strings` ifadesidir.
 
 ```python
 >>> name = 'IBM'
@@ -40,7 +40,7 @@ print(f'{name:>10s} {shares:>10d} {price:>10.2f}')
 
 ### Biçimlendirme Kodları
 
-Biçimlendirme kodu olarak ( `:`sonra  `{}`nın içine) C dilindeki  `printf()` ile benzerdir.  
+Biçimlendirme kodu olarak ( `:`sonra  `{}`nın içine) C dilindeki `printf()` ile benzerdir.  
 Yaygın kodlar aşağıdadır:
 
 ```code
@@ -66,7 +66,7 @@ Bu kısmi bir listedir:
 
 ### Sözlüklerde Biçimlendirme
 
-Sözlük değerlerini(value) biçimlendirirken `format_map()` metodunu kullanır :
+Sözlük değerlerini(value) biçimlendirirken `format_map()` metodunu kullanır:
 
 ```python
 >>> s = {
@@ -83,8 +83,7 @@ Sözlük değerlerini(value) biçimlendirirken `format_map()` metodunu kullanır
 
 ### format() metodu
 
-There is a method `format()` that can apply formatting to arguments or
-keyword arguments.
+Argümanlara ve anahtar argümanlara biçimlendirme uygulayabilen `format()` methodu vardır.
 
 ```python
 >>> '{name:>10s} {shares:10d} {price:10.2f}'.format(name='IBM', shares=100, price=91.1)
@@ -94,11 +93,11 @@ keyword arguments.
 >>>
 ```
 
-Açıkçası, `format()` biraz ayrıntılı. Ben 'f-strings' i tercih ederim  .
+Açıkçası, `format()` biraz ayrıntılı. Ben 'f-strings'i tercih ederim.
 
 ### C-Style Formatting(C stili ile biçimlendirme)
 
- `%` yi  biçimlendirme operatörünü de kullanabilirsiniz..
+ `%` biçimlendirme operatörünü de kullanabilirsiniz.
 
 ```python
 >>> 'The value is %d' % 3
@@ -109,7 +108,7 @@ Açıkçası, `format()` biraz ayrıntılı. Ben 'f-strings' i tercih ederim  .
 '3.14'
 ```
 
-Bu sağında bir obje veya  tuple'a  ihtiyaç duyar.  Biçimlendirme kodları 
+Bu sağında bir obje veya tuple'a ihtiyaç duyar. Biçimlendirme kodları 
 C 'printf()' gibi sonradan modellendi.
 
 *Not: Bu biçimlendirme sadece byte string'lerinde geçerlidir.*
@@ -122,10 +121,10 @@ b'Dave has 37 messages'
 
 ## Alıştırmalar
 
-### Alıştırma 2.8: Numaraları nasıl biçimlendiririz ?
+### Alıştırma 2.8: Numaraları nasıl biçimlendiririz?
 
-Ondalık sayıların yapızlması yaygın bir problemdir .
-Bunu çözmeninin bir yoluda 'f-strings' kullanabiliriz. 
+Ondalık sayıların yazdırılması yaygın bir problemdir.
+Bunu çözmeninin bir yolu da 'f-strings' kullanabiliriz. 
 Bunu örneklerden bakalım:
 
 ```python
@@ -144,7 +143,7 @@ Bunu örneklerden bakalım:
 ```
 
 f-strings hakkında daha fazlası için sitesini ziyaret edin
-[here](https://docs.python.org/3/library/string.html#format-specification-mini-language).Biçimlendirme 
+[here](https://docs.python.org/3/library/string.html#format-specification-mini-language). Biçimlendirme 
 bazen `%` operatörü ile stringler üzerinde de gerçekleştirilebilir.
 
 ```python
@@ -158,8 +157,8 @@ bazen `%` operatörü ile stringler üzerinde de gerçekleştirilebilir.
 `%` ile ilgili dökümantasyonlara bakmak için 
 [here](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting).
 
-Yaygın olarak `print` kullanılsada, string biçimlendirmek 'printing'(yazdırma) ile ilgili değiildir.
-Eğer bir biçimlendirilmiş stringi saklamak için onu sadece bir değişkene atayın.
+Yaygın olarak `print` kullanılsa da, string biçimlendirmek 'printing'(yazdırma) ile ilgili değildir.
+Eğer bir biçimlendirilmiş stringi saklamak istiyorsanız onu sadece bir değişkene atayın.
 
 ```python
 >>> f = '%0.4f' % value
@@ -171,7 +170,7 @@ Eğer bir biçimlendirilmiş stringi saklamak için onu sadece bir değişkene a
 ### Alıştırma 2.9: Collecting Data (Veri Toplama)
 
 Alıştırma 2.7 içinde , `report.py` adlı hisse portföyünün kazanç/kayıp hesabı yapan programı yazdınız.  
-Bu egzersizde tabloyu düzenlemeyi düzenleyeceğiz:
+Bu egzersizde tabloyu aşağıdaki şekilde düzenleyeceğiz:
 
 ```
       Name     Shares      Price     Change
@@ -190,7 +189,7 @@ Bu raporda, "Price" hissenin bedelini ve
 
 
 Yukarıdaki tabloyu elde etmeden önce, ilk olarak kulllanacağınız tüm verileri toplamanız gerekir.
-`make_report()` isimli fonksiyon yazalım bu girdi olarak hisse senetlerinin listesini ile fiyatlar sözlüğünü ve
+`make_report()` isimli fonksiyon yazalım, bu girdi olarak hisse senetlerinin listesini ile fiyatlar sözlüğünü ve
 dönüt olarak yukarıdaki tablonun satırlarını içeren tuple'ların bir listesini döndürür.
 
 Sonrasında fonksiyonu `report.py` dosyasına. Nasıl çalıştığı gerektiği burada
@@ -262,8 +261,8 @@ Programınıza yukarıdaki başlıkları içeren tuple ekleyin , her başlık st
 '      Name     Shares      Price      Change'
 ```
 
-Kodunuzudaki başlık ve verilerin stringleri ayırmak için ,
-Stringlerin altına "-" karakterini yerleştirin.Örneğin:
+Kodunuzudaki başlık ve verilerin stringleri ayırmak için 
+Stringlerin altına "-" karakterini yerleştirin. Örneğin:
 
 ```python
 '---------- ---------- ---------- -----------'
@@ -285,7 +284,7 @@ Stringlerin altına "-" karakterini yerleştirin.Örneğin:
 
 ### Alıştırma 2.12: Biçimlendirme Yarışı
 
-Kodunuzu ($) sembolü içerecek şekilde nasıl düzenlerdiniz ? Çıktı şu şekilde görünecek:
+Kodunuzu ($) sembolü içerecek şekilde nasıl düzenlerdiniz? Çıktı şu şekilde görünecek:
 
 ```
       Name     Shares      Price     Change
