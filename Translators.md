@@ -7,6 +7,9 @@ Melisa Yasak, Yagmur Gulbaz, Tugberk Demirtas,
 Kubilay Citak, Sezen Duygu Ceren, Murat Toprak,
 Merve Eyuboglu, Berkant Tugberk
 
+## Editors
+Kutay Akalin
+
 
 - [x] readme.md - Mert Cobanov - Cobanov
 
