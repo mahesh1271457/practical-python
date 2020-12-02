@@ -11,7 +11,7 @@ Kodun *nesneler* koleksiyonu olarak organize edildiği bir programlama tekniği.
 Bir * nesne * şunlardan oluşur:
 
 * Veriler. Öznitellikler
-* Davranış. Nesneye uygulanan fonksiyonlar olan yöntemler(metotlar).
+* Davranış. Nesneye uygulanan fonksiyonlar(metotlar).
 
 Bu kurs sırasında zaten biraz Nesne Tabanlı Programlama kullanıyorsunuz.
 
@@ -55,7 +55,7 @@ class Player:
 
 Örnekler, programınızda manipüle ettiğiniz gerçek *nesnelerdir*.
 
-Sınıfı bir fonksiyon olarak çağırarak oluşturulurlar..
+Sınıfı bir fonksiyon olarak çağırarak oluşturulurlar.
 
 ```python
 >>> a = Oyuncu(2, 3)
@@ -143,7 +143,7 @@ Bu alıştırmalardan başlayarak, önceki bölümlerden mevcut kodda bir
 dizi değişiklik yapmaya başlarız. Başlamak için Egzersiz 3.18'in 
 çalışan bir sürümüne sahip olmanız çok önemlidir. Buna sahip 
 değilseniz, lütfen `Solutions/3_18` dizininde bulunan çözüm 
-kodundan çalışın. Kopyalamak sorun değil.
+kodundan çalışın. Kopya sorun değil.
 
 
 ### Alıştırma 4.1: Veri Yapıları Olarak Nesneler
@@ -248,7 +248,7 @@ Bu şekilde çalışmaları gerekir:
 
 ### Alıştırma 4.3: Örnek listesi oluşturma
 
-Sözlükler listesinden Stok örneklerinin bir listesini
+Sözlükler listesinden Stock örneklerinin bir listesini
 yapmak için bu adımları deneyin. Ardından toplam maliyeti hesaplayın:
 
 ```python

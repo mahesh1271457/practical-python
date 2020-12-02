@@ -607,7 +607,7 @@ Uygulamanız sınıfınızın programlama arayüzünü kullandığı sürece,
 dahili uygulamayı istediğiniz şekilde çalışacak şekilde değiştirebilirsiniz.
 Tamamen özel kod yazabilirsiniz.  Birinin üçüncü taraf paketini kullanabilirsiniz.
 Daha iyi bir paket bulduğunuzda, bir üçüncü taraf paketini farklı bir paketle 
-değiştirirsiniz.  Farketmez, arayüzü koruduğunuz sürece uygulama kodunuzdan
+değiştirirsiniz.  Fark etmez, arayüzü koruduğunuz sürece uygulama kodunuzdan
 hiçbiri kırılmaz.  Bu güçlü bir fikir ve böyle bir şey için kalıtımı düşünmenizin 
 nedenlerinden biridir.
 

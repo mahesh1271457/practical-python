@@ -64,16 +64,25 @@ Generator’larla kod daha hızlı çalışır ve az bellek kullanır. Bir akı�
 
 ### Neden Generator’lar
 
-*Birçok sorun yineleme açısından çok daha net ifade edilir.
-  *Bir öğe koleksiyonu üzerinde döngü yapmak ve bir tür işlem gerçekleştirmek (arama, değiştirme, değiştirme vb.).
-  *İşleme pipeline’ları, çok çeşitli veri işleme sorunlarına uygulanabilir.
-*Daha iyi bellek verimliliği.
-  *Yalnızca gerektiğinde değer üretir.
-  *Dev listeler oluşturmanın aksidir.
-  *Akış verileri üzerinde çalışabilir.
-*Generator’lar kodun yeniden kullanımını teşvik eder
-  *iteration’ u yinelemeyi kullanan koddan ayırır
-  *İlginç yineleme fonksiyonlarından ve mix-n-match'tan oluşan bir araç kutusu oluşturabilirsiniz.
+* Birçok sorun yineleme açısından çok daha net ifade edilir.
+
+  * Bir öğe koleksiyonu üzerinde döngü yapmak ve bir tür işlem gerçekleştirmek (arama, değiştirme, değiştirme vb.).
+  
+  * İşleme pipeline’ları, çok çeşitli veri işleme sorunlarına uygulanabilir.
+  
+* Daha iyi bellek verimliliği.
+
+  * Yalnızca gerektiğinde değer üretir.
+  
+  * Dev listeler oluşturmanın aksidir.
+  
+  * Akış verileri üzerinde çalışabilir.
+  
+* Generator’lar kodun yeniden kullanımını teşvik eder.
+
+  * iteration’ u yinelemeyi kullanan koddan ayırır.
+  
+  * İlginç yineleme fonksiyonlarından ve mix-n-match'tan oluşan bir araç kutusu oluşturabilirsiniz.
 
 ### `itertools` modülü
 

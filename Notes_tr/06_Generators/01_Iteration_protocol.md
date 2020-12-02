@@ -169,7 +169,7 @@ class Portfolio:
 
 Bu class  liste etrafındaki bir katman olması amaçlanmıştır ama `total_cost` gibi birkaç ekstra metotla beraber. 
 `report.py` içindeki `read_portfolio()` fonksiyonunu düzenleyerek
- `Portfolio` şeklinde birşey yaratmış olduk :
+ `Portfolio` şeklinde bir şey yaratmış olduk :
 
 ```
 # report.py

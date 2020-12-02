@@ -20,7 +20,7 @@ Traceback (most recent call last):
 AttributeError: 'int' object has no attribute 'append'
 ```
 
-Şimdi n'olcak?!
+Şimdi ne olacak?!
 
 ### Dönütleri Okumak
 

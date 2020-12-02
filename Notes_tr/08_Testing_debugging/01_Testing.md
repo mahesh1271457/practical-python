@@ -14,7 +14,7 @@ denediğinizden emin olmaktır.
 `Assert` ifadesi, program için dahili bir kontroldür.
 Bir ifade true değilse, `AssertionError` istisnası oluşturur.
 
-`Assert` ifadesi sentaksı
+`Assert` ifadesi
 
 ```python
 assert <expression> [, 'Diagnostic message']
@@ -27,7 +27,7 @@ assert isinstance(10, int), 'Expected int'
 
 Kullanıcı girişini kontrol etmek için kullanılmamalıdır 
 (yani, bir web formuna veya başka bir şeye girilen veriler).
-Amacı daha çok iç kontroller ve değişmezler içindir 
+Amacı daha çok iç kontroller ve değişmezdir 
 (her zaman doğru olması gereken koşullar).
 
 ### Contract Programlama
@@ -46,7 +46,7 @@ def add(x, y):
 ```
 
 Girdileri kontrol etmek,uygun argümanlar kullanmayan
-çağıranları hemen yakalar
+çağıranları hemen yakalar.
 
 ```python
 >>> add(2, 3)
@@ -74,7 +74,7 @@ Bu şekilde testi kodunuzla aynı modüle dahil etmiş olursunuz.
  *Avantaj: Kod açıkça kırılmışsa, modülü içe aktarma 
  girişimleri çökecektir. *
 
-Bu, kapsamlı testler için önerilmez.  Daha çok temel bir "smoke testi".
+Bu, kapsamlı testler için önerilmez.  Daha çok temel bir "smoke testi"dir.
 Fonksiyon herhangi bir örnek üzerinde çalışıyor mu?
 Çalışmıyorsa, o zaman kesinlikle bir şey kırılmıştır.
 
@@ -138,7 +138,7 @@ class TestAdd(unittest.TestCase):
 
 ### `unittest` kullanımı
 
-"Unittest" ile birlikte gelen birkaç yerleşik assert vardır. Her biri farklı bir şey assert eder.
+"Unittest" ile birlikte gelen birkaç yerleşik assert vardır. Her biri farklı bir şey "assert" eder.
 
 ```python
 # Doğru ise assert et
@@ -201,7 +201,7 @@ belgelere bakın.
 ### Üçüncü Taraf Test Araçları
 
 Yerleşik `unittest` modülü, her yerde kullanılabilir olma
-avantajına sahiptir--Python'un bir parçasıdır.Bununla birlikte, 
+avantajına sahiptir. Python'un bir parçasıdır. Bununla birlikte, 
 birçok programcı bunu oldukça ayrıntılı bulmaktadır.
 Popüler alternatif ise budur [pytest](https://docs.pytest.org/en/latest/).  
 Pytest ile, test dosyanız aşağıdaki gibi basitleştirilir:
