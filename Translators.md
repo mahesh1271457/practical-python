@@ -9,6 +9,7 @@ Merve Eyuboglu, Berkant Tugberk
 
 ## Editors
 Kutay Akalin
+Elif Yiğit
 
 
 - [x] readme.md - Mert Cobanov - Cobanov
