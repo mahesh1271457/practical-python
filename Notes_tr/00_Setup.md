@@ -47,4 +47,4 @@ Kod işlerinin tamamını `Work/` dizininde yap. Bu, içerisinde bir `Data/` diz
 
 Kurs materyali 1. bölümden başlayacak şekilde bölüm sırasına göre tamamlanmalıdır. Sonraki bölümlerde göreceğin kurs egzersizleri önceki bölümlerin üzerine inşa edilecek şekilde yazılmıştır. Sonraki egzersizlerin çoğu varolan kodların küçük yeniden düzenlemelerini içermektedir. Fakat kursun çoğunda öncelikle kendi çözümlerini denemelisin.
 
-[İçindekiler Sayfasına Dön](Contents_tr.md)
+[İçindekiler Sayfasına Dön](Contents.md)
