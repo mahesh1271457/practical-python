@@ -5,11 +5,14 @@ Yaklaşık 25 yıl önce ilk Python öğrendiğimde, her türden dağınık işe
 Tüccarlar, sistem yöneticileri, gökbilimciler, tamirciler ve hatta Python'u kullanarak birkaç Mars'a araç indiren birkaç yüz roket bilimcisi hepsi bu kursu aldı. Şimdi ben Creative Commons lisansı altında bunu kullanıma sunmaktan memnuniyet duyuyorum. İyi eğlenceler!
 
 [GitHub Pages](https://globalaihub.github.io/practical-python) | [GitHub Repo](https://github.com/globalaihub/practical-python).
+
 Author:
+
 --David Beazley ([https://dabeaz.com](https://dabeaz.com)), [@dabeaz](https://twitter.com/dabeaz)
 
 
 Translator:
+
 --Global AI Hub ([https://globalaihub.com](https://globalaihub.com)), [@globalaihub](https://twitter.com/globalaihub)
 
 ## Nedir bu?
