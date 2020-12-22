@@ -38,7 +38,7 @@ Bu kurs nasıl milyonlarca satırlı Python uygulaması yazılır üzerinde dura
 
 ## Beni kursa ışınla!
 
-Tamam, tamam. Fare'ni buraya getir [Buraya](Notes_tr/Contents_tr.md)!
+Tamam, tamam. Fare'ni buraya getir [Buraya](Notes_tr/Contents.md)!
 
 ## Community Discussion
 
